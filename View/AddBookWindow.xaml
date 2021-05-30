@@ -5,54 +5,88 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Booklist.View"
         xmlns:ViewModel="clr-namespace:Booklist.ViewModel"
-    mc:Ignorable="d"
+        xmlns:Convert="clr-namespace:Booklist.View.Converter"
+        mc:Ignorable="d"
         Title="AddBookWindow" Height="300" Width="200">
     <Window.DataContext>
         <ViewModel:AddBookVM></ViewModel:AddBookVM>
     </Window.DataContext>
-    
+    <Window.Resources>
+        <Convert:LinkToTextConverter x:Key="LinkToTextConverter"></Convert:LinkToTextConverter>
+    </Window.Resources>
+
     <Grid>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="75"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-                
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
             <Button Grid.ColumnSpan="2">
                 <TextBlock Text="Save"></TextBlock>
             </Button>
 
             <TextBlock Grid.Row="1" Text="Name"></TextBlock>
-                <TextBlock Grid.Row="2" Text="Release Year"></TextBlock>
-                <TextBlock Grid.Row="3" Text="Author"></TextBlock>
-                <TextBlock Grid.Row="4" Text="ImageURL"></TextBlock>
-                <TextBlock Grid.Row="5" Text="Era"></TextBlock>
-                <TextBlock Grid.Row="6" Text="Series"></TextBlock>
-                <TextBlock Grid.Row="7" Text="Owned"></TextBlock>
-                <TextBlock Grid.Row="8" Text="Legends"></TextBlock>
-                <TextBlock Grid.Row="9" Text="Links"></TextBlock>
+            <TextBlock Grid.Row="2" Text="Release Year"></TextBlock>
+            <TextBlock Grid.Row="3" Text="Author"></TextBlock>
+            <TextBlock Grid.Row="4" Text="ImageURL"></TextBlock>
+            <TextBlock Grid.Row="5" Text="Era"></TextBlock>
+            <TextBlock Grid.Row="6" Text="Series"></TextBlock>
+            <TextBlock Grid.Row="7" Text="Owned"></TextBlock>
+            <TextBlock Grid.Row="8" Text="Legends"></TextBlock>
+            <TextBlock Grid.Row="9" Text="Links"></TextBlock>
 
-                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding NewBook.Name}"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding NewBook.ReleaseYear}"></TextBox>
-                <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding NewBook.Writer}"></TextBox>
-                <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding NewBook.ImageURL}"></TextBox>
-                <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding NewBook.Era}"></TextBox>
-                <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding NewBook.Series}"></TextBox>
-                <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding NewBook.Owned}"></TextBox>
-                <TextBox Grid.Row="8" Grid.Column="1" Text="{Binding NewBook.Legends}"></TextBox>
-                <TextBox Grid.Row="9" Grid.Column="1" Text="{Binding NewBook.Links}"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding NewBook.Name}"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding NewBook.ReleaseYear}"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding NewBook.Writer}"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding NewBook.ImageURL}"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding NewBook.Era}"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding NewBook.Series}"></TextBox>
+            <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding NewBook.Owned}"></TextBox>
+
+            <TextBox Grid.Row="8" Grid.Column="1" Text="{Binding NewBook.Legends}"></TextBox>
+            <Grid Grid.Row="9" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Vertical">
+                    <TabPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBox Name="LinkAddTextBox" Width="125" ></TextBox>
+                        <Button Command="{Binding AddLinkCommand}" Content="Add" Width="50"></Button>
+                        <Button Command="{Binding RemoveLinkCommand}" Content="Remove" Width="50"></Button>
+                    </TabPanel>
+                </StackPanel>
+
+                <ListBox Name="LinkListBox" Grid.Row="1" Grid.Column="0" ItemsSource="{Binding NewBook.Links}" 
+                     HorizontalContentAlignment="Stretch" Margin="0,0,0,-57">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="">           
+                    <Hyperlink  NavigateUri="{Binding }" RequestNavigate="Hyperlink_RequestNavigate" >
+                        <Hyperlink.Inlines>
+                            <Run Text="{Binding Path=.,Converter={StaticResource LinkToTextConverter}}"/>
+                        </Hyperlink.Inlines>
+                    </Hyperlink>
+                            </TextBlock>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
             </Grid>
+        </Grid>
     </Grid>
 </Window>

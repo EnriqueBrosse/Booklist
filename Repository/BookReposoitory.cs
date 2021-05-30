@@ -225,7 +225,7 @@ namespace Booklist.Repository
         public static void SaveBooks()
         {
             GetBooks();
-            using (StreamWriter file = File.CreateText(@"..\..\Resources\Test.json"))
+            using (StreamWriter file = File.CreateText(@"..\..\Resources\Books.json"))
             {
                 JsonSerializer serializer = new JsonSerializer();
                 serializer.Serialize(file, _bookList);
@@ -244,7 +244,6 @@ namespace Booklist.Repository
                     return;
                 }
             }
-
             _bookList.Add(book);
             SaveBooks();
         }

@@ -114,6 +114,7 @@ namespace Booklist.ViewModel
         {
             AddBookWindow bookWindow = new AddBookWindow();
             (bookWindow.DataContext as AddBookVM).overViewViewModel = this;
+            (bookWindow.DataContext as AddBookVM).BookWindow = bookWindow;
             Book newBook = new Book();
             if (_legendBool.Equals("True"))
             {

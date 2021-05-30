@@ -10,6 +10,19 @@ namespace Booklist.Model
 {
     public class Book
     {
+        public Book()
+        {
+            ReleaseYear = 2021;
+            Name = "";
+            ImageURL = "";
+            Era = "";
+            Series = "";
+            Links = new string[0];
+            Owned = false;
+            Legends = false;
+            Writer = "";
+        }
+
         [JsonProperty(PropertyName = "releaseYear")]
         public int ReleaseYear { get; set; }
         [JsonProperty(PropertyName = "name")]

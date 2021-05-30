@@ -23,7 +23,14 @@ namespace Booklist.ViewModel
 
         public string CommandText
         {
-            get { return _currentPage.ToString(); }
+            get
+            {
+                if (_currentPage is OverViewPage)
+                {
+                    return "Go to details menu";
+                }
+                return "Go to overview page";
+            }
         }
 
         private RelayCommand _switchPageCommand;

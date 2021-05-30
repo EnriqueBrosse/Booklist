@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using System.Windows.Navigation;
+using System.Diagnostics;
+
 namespace Booklist.View
 {
     /// <summary>
@@ -22,6 +25,18 @@ namespace Booklist.View
         public AddBookWindow()
         {
             InitializeComponent();
+        }
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            if (e.Uri.OriginalString == "")
+            {
+                e.Handled = true;
+                return;
+            }
+            // for .NET Core you need to add UseShellExecute = true
+            // see https://docs.microsoft.com/dotnet/api/system.diagnostics.processstartinfo.useshellexecute#property-value
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+            e.Handled = true;
         }
     }
 }

@@ -1,0 +1,58 @@
+﻿<Window x:Class="Booklist.View.AddBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Booklist.View"
+        xmlns:ViewModel="clr-namespace:Booklist.ViewModel"
+    mc:Ignorable="d"
+        Title="AddBookWindow" Height="300" Width="200">
+    <Window.DataContext>
+        <ViewModel:AddBookVM></ViewModel:AddBookVM>
+    </Window.DataContext>
+    
+    <Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="75"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                
+            <Button Grid.ColumnSpan="2">
+                <TextBlock Text="Save"></TextBlock>
+            </Button>
+
+            <TextBlock Grid.Row="1" Text="Name"></TextBlock>
+                <TextBlock Grid.Row="2" Text="Release Year"></TextBlock>
+                <TextBlock Grid.Row="3" Text="Author"></TextBlock>
+                <TextBlock Grid.Row="4" Text="ImageURL"></TextBlock>
+                <TextBlock Grid.Row="5" Text="Era"></TextBlock>
+                <TextBlock Grid.Row="6" Text="Series"></TextBlock>
+                <TextBlock Grid.Row="7" Text="Owned"></TextBlock>
+                <TextBlock Grid.Row="8" Text="Legends"></TextBlock>
+                <TextBlock Grid.Row="9" Text="Links"></TextBlock>
+
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding NewBook.Name}"></TextBox>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding NewBook.ReleaseYear}"></TextBox>
+                <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding NewBook.Writer}"></TextBox>
+                <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding NewBook.ImageURL}"></TextBox>
+                <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding NewBook.Era}"></TextBox>
+                <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding NewBook.Series}"></TextBox>
+                <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding NewBook.Owned}"></TextBox>
+                <TextBox Grid.Row="8" Grid.Column="1" Text="{Binding NewBook.Legends}"></TextBox>
+                <TextBox Grid.Row="9" Grid.Column="1" Text="{Binding NewBook.Links}"></TextBox>
+            </Grid>
+    </Grid>
+</Window>

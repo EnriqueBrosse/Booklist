@@ -1,0 +1,60 @@
+﻿<Page x:Class="Booklist.View.OverViewPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Booklist.View"
+        xmlns:ViewModel="clr-namespace:Booklist.ViewModel"
+        mc:Ignorable="d"
+        d:DesignHeight="450" d:DesignWidth="800"
+        Title="OverViewPage" Background="Black">
+    <Page.DataContext>
+        <ViewModel:OverViewVM></ViewModel:OverViewVM>
+    </Page.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <ComboBox ItemsSource="{Binding Eras}" SelectedItem="{Binding SelectedEra}" Grid.ColumnSpan="3"/>
+
+        <Button Grid.Column="3" Grid.ColumnSpan="3" Command="{Binding AddBookCommand}">
+            <TextBlock Text="Add Book"></TextBlock>
+        </Button>
+       
+        <TextBlock Text="Series" Grid.Row="1" Foreground="White"></TextBlock>
+        
+        <ComboBox ItemsSource="{Binding Series}" SelectedItem="{Binding SelectedSeries}" Grid.Row="1" Grid.Column="1"/>
+        
+        <TextBlock Text="Owned" Grid.Row="1" Grid.Column="2" Foreground="White"></TextBlock>
+        
+        <ComboBox ItemsSource="{Binding OwnedList}" SelectedItem="{Binding OwnedBool}" Grid.Row="1" Grid.Column="3"/>
+        
+        <TextBlock Text="Legends" Grid.Row="1" Grid.Column="4" Foreground="White"></TextBlock>
+        
+        <ComboBox ItemsSource="{Binding LegendsList}" SelectedItem="{Binding LegendBool}" Grid.Row="1" Grid.Column="5"/>
+
+        <ListBox Grid.Row="2" Grid.ColumnSpan="6" Foreground="White" Background="Black" x:Name="list" ItemsSource="{Binding Books}" SelectedItem="{Binding SelectedBook}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <!-- should contain type icon image when binding -->
+                        <!--<Image Height="20" Width="20" Margin="4" Source="{Binding Type,Converter={StaticResource TypeToIcon}}"/>-->
+                        <!-- binding needed -->
+                        <TextBlock Text="{Binding Name}" Margin="10,0" Foreground="White" VerticalAlignment="Center" FontSize="21"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Page>

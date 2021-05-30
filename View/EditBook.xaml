@@ -1,0 +1,53 @@
+﻿<Window x:Class="Booklist.View.EditBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ViewModel="clr-namespace:Booklist.ViewModel"
+        xmlns:local="clr-namespace:Booklist.View"
+        mc:Ignorable="d"
+        Title="EditBook" Height="300" Width="200">
+    <Window.DataContext>
+        <ViewModel:EditBookVM></ViewModel:EditBookVM>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Command="{Binding SaveCommand}">
+            <TextBlock> Save</TextBlock>
+        </Button>
+        
+        <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Book Name"></TextBlock>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Era"></TextBlock>
+        <TextBlock Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Series"></TextBlock>
+        <TextBlock Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Image Link"></TextBlock>
+        <TextBlock Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Writer"></TextBlock>
+        <TextBlock Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" Text="year"></TextBlock>
+        <TextBlock Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Legends"></TextBlock>
+        <TextBlock Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Owned"></TextBlock>
+
+        <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding CopiedBook.Name}"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding CopiedBook.Era}"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding CopiedBook.Series}"></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding CopiedBook.ImageURL}"></TextBox>
+        <TextBox Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding CopiedBook.Writer}"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding CopiedBook.ReleaseYear}"></TextBox>
+        <TextBox Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding CopiedBook.Legends}"></TextBox>
+        <TextBox Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding CopiedBook.Owned}"></TextBox>
+    </Grid>
+</Window>

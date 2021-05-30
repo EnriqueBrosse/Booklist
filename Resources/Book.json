@@ -1,0 +1,27 @@
+﻿[
+  {
+    "releaseMonth": 0,
+    "releaseYear": 2013,
+    "name": "Into The Void",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/51Un70icy2L._SX302_BO1,204,203,200_.jpg",
+    "era": "Before the Republic",
+    "series": "Down of the Jedi",
+    "amazonLink": "https://www.amazon.nl/Into-Void-Star-Wars-Legends/dp/0345545052/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622104639&sr=1-1",
+    "bolLink": "https://www.bol.com/nl/p/into-the-void/9200000017459019/?bltgh=pMVGZvjVn3FIkLSfwoNDSw.gR-jansnUJZeSXrgvNdIKw_0_7.8.ProductTitle",
+    "owned": false,
+    "legends": true,
+    "isBook": false
+  },
+  {
+    "releaseMonth": 0,
+    "releaseYear": 2012,
+    "name": "Lost Tribe of the Sith: The Collected Stories",
+    "imageURL": "",
+    "era": "Old Galactic Republic era",
+    "series": "",
+    "amazonLink": "",
+    "bolLink": "",
+    "owned": false,
+    "legends": true
+  }
+]

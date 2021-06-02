@@ -7,10 +7,14 @@
         xmlns:ViewModel="clr-namespace:Booklist.ViewModel"
         mc:Ignorable="d"
         d:DesignHeight="450" d:DesignWidth="800"
+        xmlns:Convert="clr-namespace:Booklist.View.Converter"
         Title="OverViewPage" Background="Black">
     <Page.DataContext>
         <ViewModel:OverViewVM></ViewModel:OverViewVM>
     </Page.DataContext>
+    <Page.Resources>
+            <Convert:LinkToImageConverter x:Key="LinkToImageConverter"></Convert:LinkToImageConverter>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -25,6 +29,8 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="2" Grid.ColumnSpan="6" Source="..\Resources/Local Pictures/star_wars_backgroundTamara.png" Stretch="UniformToFill"></Image>
         
         <ComboBox ItemsSource="{Binding Eras}" SelectedItem="{Binding SelectedEra}" Grid.ColumnSpan="3"/>
 
@@ -44,17 +50,20 @@
         
         <ComboBox ItemsSource="{Binding LegendsList}" SelectedItem="{Binding LegendBool}" Grid.Row="1" Grid.Column="5"/>
 
-        <ListBox Grid.Row="2" Grid.ColumnSpan="6" Foreground="White" Background="Black" x:Name="list" ItemsSource="{Binding Books}" SelectedItem="{Binding SelectedBook}">
+        <ListBox Grid.Row="2" Grid.ColumnSpan="6" Foreground="White" Background="#0000" x:Name="list" ItemsSource="{Binding Books}" SelectedItem="{Binding SelectedBook}" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <!-- should contain type icon image when binding -->
-                        <!--<Image Height="20" Width="20" Margin="4" Source="{Binding Type,Converter={StaticResource TypeToIcon}}"/>-->
-                        <!-- binding needed -->
-                        <TextBlock Text="{Binding Name}" Margin="10,0" Foreground="White" VerticalAlignment="Center" FontSize="21"/>
+                    <StackPanel Orientation="Vertical" Width="180" Height="140">
+                        <Image Source="{Binding ImageURL, Converter={StaticResource LinkToImageConverter }}" Height="100" Width="60" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill"></Image>
+                        <TextBlock Text="{Binding Name}" Margin="10,0" Foreground="White" VerticalAlignment="Center" FontSize="16" TextWrapping="Wrap" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
+            <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
         </ListBox>
     </Grid>
 </Page>

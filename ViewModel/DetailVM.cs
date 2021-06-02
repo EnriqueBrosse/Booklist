@@ -124,6 +124,7 @@ namespace Booklist.ViewModel
             returnValue.Owned = bookToCopy.Owned;
             returnValue.ReleaseYear = bookToCopy.ReleaseYear;
             returnValue.Series = bookToCopy.Series;
+            returnValue.Writer = bookToCopy.Writer;
             return returnValue;
         }
         private void Save()

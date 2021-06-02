@@ -22,7 +22,7 @@
 
     <Grid>
         <Grid.Resources>
-            <SolidColorBrush x:Key="TitleColor" Color="Red"></SolidColorBrush>
+            <SolidColorBrush x:Key="TitleColor" Color="White"></SolidColorBrush>
             <SolidColorBrush x:Key="NonTitleColor" Color="White"></SolidColorBrush>
             <sys:Double x:Key="NonTitleFontSize">12</sys:Double>
             <sys:Double x:Key="TitleFontSize">20</sys:Double>
@@ -33,7 +33,9 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="20"></RowDefinition>
         </Grid.RowDefinitions>
-        
+
+        <Image Source= "..\Resources/Local Pictures/star_wars_backgroundTamara.png"  Grid.RowSpan="3" Stretch="UniformToFill"></Image>
+
         <!-- top grid -->
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
@@ -41,6 +43,7 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
+
 
             <Button Command="{Binding EditCommand}" Grid.Column="0" Margin="80,10">
                 <TextBlock Text="Edit"></TextBlock>
@@ -52,11 +55,10 @@
 
             <TextBlock Grid.Column="1"  Text="{Binding CurrentBook.Name, FallbackValue=BookName}"
                  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="{StaticResource TitleFontSize}"
-                 Background="Black" Foreground="{StaticResource TitleColor}" TextWrapping="Wrap"
-                 />
+                 Foreground="{StaticResource TitleColor}" TextWrapping="Wrap"/>
         </Grid>
         
-        <Grid Grid.Row="1" Background="Black">
+        <Grid Grid.Row="1" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="60"></RowDefinition>
                 <RowDefinition></RowDefinition>
@@ -70,19 +72,19 @@
             
             <TextBlock Grid.Row="0" Text="{Binding CurrentBook.Era, FallbackValue=Era}"
                  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="{StaticResource TitleFontSize}"
-                 TextWrapping="Wrap" Background="Black" Foreground="{StaticResource TitleColor}"/>
+                 TextWrapping="Wrap" Foreground="{StaticResource TitleColor}"/>
 
             <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding CurrentBook.Series, FallbackValue=Series}"
                  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="{StaticResource TitleFontSize}"
-                 Background="Black" Foreground="{StaticResource TitleColor}"/>
+                 Foreground="{StaticResource TitleColor}"/>
 
-            <TextBlock Grid.Row="0" Grid.Column="2" Text="Author"
+            <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding CurrentBook.Writer, FallbackValue=Author}"
                  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="{StaticResource TitleFontSize}"
-                 Background="Black" Foreground="{StaticResource TitleColor}"/>
+                 Foreground="{StaticResource TitleColor}"/>
             
             <TextBlock Grid.Row="0" Grid.Column="3" Text="{Binding CurrentBook.ReleaseYear, FallbackValue=Year}"
                  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="{StaticResource TitleFontSize}"
-                 Background="Black" Foreground="{StaticResource TitleColor}"/>
+                 Foreground="{StaticResource TitleColor}"/>
 
 
             <!-- Grid for the Book links -->
@@ -101,16 +103,16 @@
                 </StackPanel>
 
                 <ListBox Name="LinkListBox" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding CurrentBook.Links}" 
-                     Foreground="{StaticResource NonTitleColor}" FontSize="{StaticResource NonTitleFontSize}" Background="black"
+                     Foreground="{StaticResource NonTitleColor}" Background="#0000" FontSize="{StaticResource NonTitleFontSize}"
                      HorizontalContentAlignment="Stretch">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="">           
-                    <Hyperlink  NavigateUri="{Binding }" RequestNavigate="Hyperlink_RequestNavigate" >
-                        <Hyperlink.Inlines>
-                            <Run Text="{Binding Path=.,Converter={StaticResource LinkToTextConverter}}"/>
-                        </Hyperlink.Inlines>
-                    </Hyperlink>
+                                <Hyperlink  NavigateUri="{Binding }" RequestNavigate="Hyperlink_RequestNavigate" >
+                                    <Hyperlink.Inlines>
+                                        <Run Text="{Binding Path=.,Converter={StaticResource LinkToTextConverter}}" />
+                                    </Hyperlink.Inlines>
+                                </Hyperlink>
                             </TextBlock>
                         </DataTemplate>
                     </ListBox.ItemTemplate>

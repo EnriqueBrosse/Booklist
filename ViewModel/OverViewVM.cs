@@ -149,6 +149,8 @@ namespace Booklist.ViewModel
             Eras = BookReposoitory.GetEras();
             Eras.Add("All");
             SelectedEra = "All";
+
+            BookReposoitory.ScrapData();
         }
     }
 }

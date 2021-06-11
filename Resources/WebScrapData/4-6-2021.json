@@ -1,0 +1,4678 @@
+[
+  {
+    "bookName": "",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Into The Void",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Into-Void-Star-Wars-Legends/dp/0345545052/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622104639&sr=1-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 6.6
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.14
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.95
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/into-the-void/9200000017459019/?bltgh=pMVGZvjVn3FIkLSfwoNDSw.gR-jansnUJZeSXrgvNdIKw_0_7.8.ProductTitle",
+        "promoPrice": 8.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Dawn of the Jedi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Lost Tribe of the Sith: The Collected Stories",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-WarsTM-Vergessene-Stamm-Sith/dp/3442269318/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622223133&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.48
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.0
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-lost-tribe-of-the-sith/9200000000034650/?bltgh=vEAA-H1QFtpYCJnLECRNSg.2_9.11.ProductTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Tales of the Jedi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Revan",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Deceived",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Fatal Alliance",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Annihilation",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Red Harvest",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Red-Harvest-Star-Wars-Legends/dp/0345518594/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Red+Harvest&qid=1622223293&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.18
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.26
+          },
+          {
+            "bindwise": "Cd",
+            "price": 42.71
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/red-harvest/1001004011454695/?bltgh=iOdGD06zE1uu5znvw-hF-Q.2_9.10.ProductTitle",
+        "promoPrice": 8.39,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Knight Errant",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Path of Destruction",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Rule of Two",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Dynasty of Evil",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Darth Plagueis",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Legacy of the Jedi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Wrath of Darth Maul",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Rising Force",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Dark Rival",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Hidden Past",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Mark of the Crown",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Defenders of the Dead",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Uncertain Path",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Captive Temple",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Day of Reckoning",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Fight for Truth",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Shattered Peace",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Deadly Hunter",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Evil Experiment",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Dangerous Rescue",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Ties That Bind",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Death of Hope",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Call to Vengeance",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Only Witness",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Threat Within",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Deceptions",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Followers",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Secrets of the Jedi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Life and Legend of Obi-Wan Kenobi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Rise and Fall of Darth Vader",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Cloak of Deception",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Cloak-Deception-Star-Wars-Legends/dp/0345442970/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Cloak+of+Deception&qid=1622223736&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 101.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.61
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 10.99
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/cloak-of-deception/1001004001711307/?s2a=#productTitle",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 34.63
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Maul: Lockdown",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Darth Maul: Shadow Hunter",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Queen Amidala",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Anakin Skywalker",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Darth Maul",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Rogue Planet",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Rogue-Planet-Star-Wars-Legends/dp/0345435400/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Rogue+Planet&qid=1622223956&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 94.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.45
+          },
+          {
+            "bindwise": "Cassette",
+            "price": 94.0
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/rogue-planet/1001004000920886/?bltgh=hahaLj2ojOcBg0M6sT9PXg.2_9.10.ProductTitle",
+        "promoPrice": 8.57,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 8.57
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 27.44
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Path to Truth",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Way of the Apprentice",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Trail of the Jedi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Dangerous Games",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Master of Disguise",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The School of Fear",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Shadow Trap",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Moment of Truth",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Changing of the Guard",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The False Peace",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Final Showdown",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Outbound Flight",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Outbound-Flight-Star-Wars-Legends/dp/034545684X/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Outbound+Flight&qid=1622224102&s=books&sr=1-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 6.26
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 121.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.18
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.59
+          },
+          {
+            "bindwise": "Cd",
+            "price": 140.04
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/outbound-flight/1001004002950583/?bltgh=sr7a823lDuwzVF9tmFVL4g.2_9.10.ProductTitle",
+        "promoPrice": 8.89,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Approaching Storm",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Approaching-Storm-Star-Wars-Legends/dp/0345442997/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+Approaching+Storm&qid=1622224126&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 88.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.14
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.72
+          },
+          {
+            "bindwise": "Cassette",
+            "price": 36.29
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/the-approaching-storm/1001004001868432/?bltgh=l0bHRpmSYEQDD8d9bD1N0w.2_9.10.ProductTitle",
+        "promoPrice": 9.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Fight to Survive",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Crossfire",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Maze of Deception",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Hunted",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "A New Threat",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Pursuit",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Star Wars: The Clone Wars",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Traviss-Star-Wars-Clone/dp/0099533197/ref=sr_1_20?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Star+Wars%3A+The+Clone+Wars&qid=1622224384&refinements=p_n_feature_nine_browse-bin%3A5190934031&rnid=5190932031&s=books&sr=1-20",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 142.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.44
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars/1001004006405624/?bltgh=pgIvLox9J-Hnm-3F-OFI2w.lGKz8qKGyHNdOshlKSRLbg_0_7.24.ProductTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          },
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 49.68
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Wild Space",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Wild-Space-Star-Legends-Clone/dp/0345509013/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Wild+Space&qid=1622224536&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.95
+          },
+          {
+            "bindwise": "Cd",
+            "price": 147.05
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/wild-space/1001004008214352/?bltgh=uIrgj1Jm7rP9ExAO-HdJJw.2_9.12.ProductTitle",
+        "promoPrice": 14.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "No Prisoners",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/No-Prisoners-Star-Legends-Clone/dp/0345508998/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=No+Prisoners&qid=1622224573&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.9
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/no-prisoners/1001004006849103/?bltgh=lNwZeVccnRsLgo0zhb1BzQ.2_9.12.ProductTitle",
+        "promoPrice": 15.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Stealth",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Stealth-Star-Legends-Clone-Gambit/dp/0345509021/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Clone+Wars%3A+Gambit+stealth&qid=1622224708&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 17.0
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/stealth/1001004008662555/?bltgh=kEWakgK-yAeJACKIPGdJ6w.2_9.10.ProductTitle",
+        "promoPrice": 19.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Siege",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Siege-Star-Legends-Clone-Gambit/dp/0345509005/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Clone+Wars%3A+Gambit+Siege&qid=1622224834&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 16.0
+          },
+          {
+            "bindwise": "Cd",
+            "price": 62.88
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/siege/1001004010225645/?bltgh=qpfYg4l1lD5ftRlt1CNC0g.2_9.12.ProductTitle",
+        "promoPrice": 14.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Breakout Squad",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Breakout-Squad-Ryder-Windham/dp/0448450356/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Clone+Wars%3A+Secret+Missions+Breakout+Squad&qid=1622224893&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 37.72
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Curse of the Black Hole Pirates",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Curse-Black-Pirates-Ryder-Windham/dp/0448453932/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Clone+Wars%3A+Secret+Missions+Curse+of+the+Black+Hole+Pirates&qid=1622224962&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 45.06
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Duel at Shattered Rock",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Duel-Shattered-Rock-Ryder-Windham/dp/0448455668/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Clone+Wars%3A+Secret+Missions+Duel+at+Shattered+Rock&qid=1622224978&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 38.14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Guardians of the Chiss Key",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Guardians-Chiss-Key-Ryder-Windham/dp/0448457458/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Clone+Wars%3A+Secret+Missions+Guardians+of+the+Chiss+Key&qid=1622225016&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 36.78
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Hard Contact",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Republic-Commando-Contact/dp/1841495247/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622225080&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 3.38
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 10.97
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.36
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/hard-contact/1001004002327878/?bltgh=lxQQD63mF9-XEkguOJVLLg.2_9.12.ProductTitle",
+        "promoPrice": 9.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 9.99
+          },
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 49.68
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Triple Zero",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Triple-Zero-Legends-Republic-Commando/dp/0345490096/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Republic+Commando+Triple+Zero&qid=1622225126&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 4.43
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.5
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/triple-zero/1001004002658552/?bltgh=pce5akSmZPltHhk8s7xNuQ.2_9.10.ProductTitle",
+        "promoPrice": 11.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "True Colors",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/True-Colors-Legends-Republic-Commando/dp/0345498003/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Republic+Commando+True+Colors&qid=1622225195&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 5.1
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.15
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/true-colors/1001004005014671/?bltgh=qN3Gt2Q-D454Zsug-RhCMQ.2_9.11.ProductTitle",
+        "promoPrice": 8.79,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 6.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.79
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Order 66",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Republic-Commando-Klonkriegsroman/dp/3833236485/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Republic+Order+66&qid=1622225224&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 15.0
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/order-66-star-wars-legends/1001004006731590/?bltgh=tA8qcuQSVYZtRTNjiKlGeA.2_9.11.ProductTitle",
+        "promoPrice": 11.99,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 4.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 11.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "501st",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/501st-Legends-Imperial-Commando-Novel/dp/0345511131/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=501st&qid=1622225259&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.2
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.18
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.58
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/501st-star-wars-legends/1001004006538407/?bltgh=tZRUJeeEhFzp71Sw549LUQ.2_9.12.ProductTitle",
+        "promoPrice": 7.59,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Shatterpoint",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Stover-M-Star-Wars-Shatterpoint/dp/0099410486/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622225327&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 11.14
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 142.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.53
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.45
+          },
+          {
+            "bindwise": "Cd",
+            "price": 64.39
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/shatterpoint-star-wars-legends/1001004002233181/?bltgh=ivCbdRgWh5WvgaGuhsZLtQ.2_9.11.ProductTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Cestus Deception",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Cestus-Deception-Legends-Clone-Novel/dp/0345458982/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+Cestus+Deception&qid=1622225366&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 1.68
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 101.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.0
+          },
+          {
+            "bindwise": "Cd",
+            "price": 99.91
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Hive",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Jedi Trial",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Jedi-Trial-Legends-Clone-Novel/dp/0345461150/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=star+wars+Jedi+Trial&qid=1622225529&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.12
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 101.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 18.34
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.49
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/jedi-trial-star-wars-legends/1001004002431435/?bltgh=s3d88IRSiFNULtAlQARPDg.2_9.11.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Yoda: Dark Rendezvous",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Yoda-Rendezvous-Legends-Clone-Novel/dp/0345463099/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Yoda%3A+Dark+Rendezvous&qid=1622225563&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          },
+          {
+            "bindwise": "Cd",
+            "price": 59.0
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/yoda-dark-rendezvous-star-wars-legends/1001004002274129/?bltgh=t-VbBlSpQPrtwFYHuyJIHA.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "MedStar I: Battle Surgeons",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Medstar-Battle-Surgeons/dp/0099410540/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=MedStar+I%3A+Battle+Surgeons&qid=1622225582&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.77
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.45
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/battle-surgeons/1001004002327798/?bltgh=jNsNyQzJM5bVgspnikRKsA.2_9.10.ProductTitle",
+        "promoPrice": 13.19,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "MedStar II: Jedi Healer",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Reaves-Star-Wars-Medstar-Healer/dp/009947414X/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=MedStar+II%3A+Jedi+Healer&qid=1622225622&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.31
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/jedi-healer/1001004002236939/?bltgh=vRNCnHhyo3-HrvRKlLVGQQ.2_9.10.ProductTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Labyrinth of Evil",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Labyrinth-Evil-Star-Wars-Legends/dp/0345475739/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Labyrinth+of+Evil&qid=1622225653&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 6.6
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 115.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 11.78
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.95
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/labyrinth-of-evil/1001004002539579/?bltgh=gWg8BbGegxCIgS-1ZIlMkg.2_9.11.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Dark Lord: The Rise of Darth Vader",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Dark-Lord-Legends-Darth-Vader/dp/0345477332/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Dark+Lord%3A+The+Rise+of+Darth+Vader&qid=1622225698&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 115.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.18
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.89
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/dark-lord-star-wars-legends/1001004002658462/?bltgh=nN-F46xIg1csifU4l4JCoA.2_9.11.ProductTitle",
+        "promoPrice": 8.79,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 8.79
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 51.08
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Kenobi",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-WarsTM-Kenobi-Jackson-Miller/dp/373416009X/ref=sr_1_3?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Kenobi&qid=1622225754&sr=8-3",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 6.87
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.99
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/kenobi/9200000021216566/?bltgh=ii6GAXe1xeD94SfUqWpKZQ.2_9.11.ProductTitle",
+        "promoPrice": 10.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Incognito",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Jedi Twilight",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Jedi-Twilight-Legends-Coruscant-Nights/dp/0345477502/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Jedi+Twilight&qid=1622225825&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 12.45
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/jedi-twilight/1001004002658463/?bltgh=hz56RI6Qr-i2M0oB30dHsA.2_9.10.ProductTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Street of Shadows",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Street-Shadows-Legends-Coruscant-Nights/dp/0345477545/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Street+of+Shadows&qid=1622225883&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 17.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/street-of-shadows/1001004006010422/?bltgh=iUluaIUSX7MnDFGxqzJL-w.2_9.11.ProductTitle",
+        "promoPrice": 6.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Last Jedi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Desperate Mission",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Dark Warning",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Underworld ",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Death on Naboo",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "A Tangled Web",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Return of the Dark Side",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Secret Weapon",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Against the Empire",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Master of Deception",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Reckoning",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "A New Hope: The Life of Luke Skywalker",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Paradise Snare",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Hutt Gambit",
+    "websitePrices": [
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-the-han-solo-trilogy-the-hutt-gambit/9200000110942211/?bltgh=szGteIWnRK-3VX7eWNFKRA.2_9.11.ProductTitle",
+        "promoPrice": 9.05,
+        "bookPrices": [
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/the-hutt-gambit/1001004001365043/?bltgh=szGteIWnRK-3VX7eWNFKRA.2_9.10.ProductTitle",
+        "promoPrice": 12.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Rebel Dawn",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Rebel-Dawn-Star-Legends-Trilogy/dp/0553574175/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622226312&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 4.53
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.0
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/rebel-dawn/1001004001348630/?bltgh=l3XRxaqfXJf6QqdtMK9MQQ.2_9.10.ProductTitle",
+        "promoPrice": 12.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Mindharp of Sharu",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Flamewind of Oseon",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Starcave of ThonBoka",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Force Unleashed I",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Force-Unleashed-Star-Wars-Legends/dp/034550285X/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+Force+Unleashed+I&qid=1622226484&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 4.53
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 108.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.95
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/the-force-unleashed/1001004006538401/?bltgh=tTQOhs1pEuKVVtVdcvNHaA.lW799l-q0OqSiMy2XYpNPA_0_7.8.ProductTitle",
+        "promoPrice": 10.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Force Unleashed II",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Force-Unleashed-II-Star-Legends/dp/0345511557/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+Force+Unleashed+II&qid=1622226576&s=books&sr=1-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 4.53
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 115.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.45
+          },
+          {
+            "bindwise": "Cd",
+            "price": 54.84
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/the-force-unleashed-ii/1001004011024655/?bltgh=rk9ctCJOJ5xcQbhxuV9A3A.uwFVoImWO4AmWH6Pma9DzQ_0_7.9.ProductTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 5.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Han Solo at Stars' End ",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Han Solo's Revenge",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Han Solo and the Lost Legacy",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Death Troopers",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Death-Troopers-Joe-Schreiber/dp/0345520815/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Death+Troopers&qid=1622226661&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 6.6
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 50.64
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.39
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.95
+          },
+          {
+            "bindwise": "Cd",
+            "price": 166.88
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/death-troopers/1001004010223379/?bltgh=pR-mInd9iqSBc3t3b91NtQ.mfAAlY6CTcdp86QmPSZI8w_0_7.8.ProductTitle",
+        "promoPrice": 6.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Death Star",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Death-Star-Wars-Legends/dp/034547743X/ref=sr_1_6?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Death+Star&qid=1622226695&sr=8-6",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 108.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.08
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/death-star/1001004006157386/?bltgh=iucK4YvDzw04h2vPX-pLvw.lvaNKQqINhGYFSBlwtNJ9Q_0_7.9.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Shadow Games",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Shadow-Games-Star-Wars-Legends/dp/0345511204/ref=sr_1_5?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Shadow+Games&qid=1622226765&sr=8-5",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.55
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 34.99
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/shadow-games/1001004011171995/?bltgh=iDqCQhbj-PLh0d9PVO1CLQ.rUexKqXzVYwk6RdHZTpEVQ_0_7.9.ProductTitle",
+        "promoPrice": 0.0,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Target",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Hostage",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Renegade",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Trapped",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Uprising ",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Winner Lose All�A Lando Calrissian Tale",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Scoundrels",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Scoundrels-Timothy-Zahn/dp/0099542927/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622226874&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 8.75
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 137.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.68
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/scoundrels/9200000016169950/?bltgh=l4wmhjVnK96R9ptDcDxDJw.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 59.32
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Eaten Alive",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "City of the Dead",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Planet Plague",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Nightmare Machine",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Ghost of the Jedi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Army of Terror",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Brain Spiders",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Swarm",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Spore",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Doomsday Ship",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Clones",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Hunger",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Allegiance",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Allegiance-Star-Legends-Timothy-Zahn/dp/0345477391/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=star+wars+Allegiance&qid=1622226966&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 108.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.72
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/allegiance/1001004005848659/?bltgh=ldvJ7J3FTtPe391zYVtAIg.2_9.10.ProductTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 53.08
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Choices of One",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Choices-One-Star-Wars-Legends/dp/0345511263/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622227102&sr=8-5",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 137.08
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.01
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/choices-of-one/1001004011764059/?bltgh=lD7Lu0AeHCRdo9CkfzlOkg.2_9.10.ProductTitle",
+        "promoPrice": 12.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Smuggler's Gambit",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Star Wars Galaxies: The Ruins of Dantooine",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Ruins-Dantooine-Star-Galaxies-Legends/dp/0345470664/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Star+Wars+Galaxies%3A+The+Ruins+of+Dantooine&qid=1622227280&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 21.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.35
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars/1001004002739424/?bltgh=gVTR2NavFQzXv5fYJ2BEYA.2_9.10.ProductTitle",
+        "promoPrice": 18.99,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 12.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 18.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 31.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Splinter of the Mind's Eye",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Splinter-Minds-Eye-Star-Legends/dp/0345320239/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Splinter+of+the+Mind%27s+Eye&qid=1622227300&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 3.7
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 231.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.45
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/splinter-of-the-mind-s-eye/1001004000799386/?bltgh=oqJOYukx1eCVBkrrka9ANg.2_9.10.ProductTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 3.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Razor's Edge",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Razors-Edge-Star-Wars-Legends/dp/0345545257/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=star+wars+Razor%27s+Edge&qid=1622227352&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 5.08
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/razor-s-edge/9200000025001966/?bltgh=nQT3acZ85utPYNHpMf1EJQ.2_9.10.ProductTitle",
+        "promoPrice": 6.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 6.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 38.05
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Honor Among Thieves",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Honor-Among-Thieves-Star-Legends/dp/0345546873/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Honor+Among+Thieves&qid=1622227394&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.31
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.5
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/honor-among-thieves/9200000030694889/?bltgh=jW-wJMGHVLptoW-wmr5HQQ.2_9.10.ProductTitle",
+        "promoPrice": 7.25,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Rebel Mission to Ord Mantell",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Shadows of the Empire",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Shadows-Empire-Star-Wars-Legends/dp/0553574132/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Shadows+of+the+Empire&qid=1622227431&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 5.1
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.45
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/shadows-of-the-empire/1001004000969703/?bltgh=i8CEFqYWDN-D9-Lil1NPEg.2_9.10.ProductTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 6.99
+          },
+          {
+            "bindwise": "Luisterboek",
+            "price": 9.05
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Mandalorian Armor",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Mandalorian-Armor-Legends-Bounty-Hunter/dp/0553578855/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622227461&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 5.18
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.45
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/the-mandalorian-armor/1001004000968791/?bltgh=g61KEkWo4BVmtNZT1nVDfA.2_9.11.ProductTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Slave Ship",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Slave-Ship-Legends-Bounty-Hunter/dp/055357888X/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622227532&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 4.53
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.69
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/slave-ship/1001004000586022/?bltgh=u2ST6QKZPlWhJKbp4uRJAQ.2_9.10.ProductTitle",
+        "promoPrice": 7.59,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 5.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.59
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Hard Merchandise",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Hard-Merchandise-Legends-Bounty-Hunter/dp/055357891X/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Hard+Merchandise&qid=1622227560&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 4.53
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.78
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/hard-merchandise/1001004001332064/?bltgh=sTg8eXl3n9Ih9NtOUgtCYg.2_9.10.ProductTitle",
+        "promoPrice": 12.89,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 5.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.89
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Truce at Bakura",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Soldier for the Empire",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Rebel Agent",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Jedi Knight",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Glove of Darth Vader",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Lost City of the Jedi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Zorba the Hutt's Revenge",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Mission from Mount Yoda",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Queen of the Empire",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Prophets of the Dark Side",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Luke Skywalker and the Shadows of Mindor",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Skywalker-Shadows-Mindor/dp/0099491990/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622227716&sr=1-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 135.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 11.29
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.53
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/luke-skywalker-and-the-shadows-of-mindor/1001004007646252/?bltgh=qysOIAHwXHUJYMIgBtVGsA.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Rogue Squadron",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Wedge's Gamble",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Krytos Trap",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Bacta War",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Wraith Squadron",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Iron Fist",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Solo Command",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Isard's Revenge",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Starfighters of Adumar",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Courtship of Princess Leia",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "A Forest Apart",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Tatooine Ghost",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Tatooine-Ghost-Star-Wars-Legends/dp/0345456696/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Tatooine+Ghost&qid=1622227813&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 37.3
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.82
+          },
+          {
+            "bindwise": "Cd",
+            "price": 83.15
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-tatooine-ghost/9200000110921580/?bltgh=mLR-lVoDrSo--pPbSJFILw.2_9.10.ProductTitle",
+        "promoPrice": 13.57,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 10.99
+          },
+          {
+            "bindwise": "Luisterboek",
+            "price": 13.57
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Mixed up Droid",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Heir to the Empire",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Dark Force Rising",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Last Command",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Jedi Search",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Dark Apprentice",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Champions of the Force",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "I, Jedi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Children of the Jedi",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Darksaber",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Darksaber-Kevin-Anderson/dp/0553576119/ref=sr_1_7?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Darksaber&qid=1622227979&sr=8-7",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 5.1
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 101.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.06
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Planet of Twilight",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Planet-Twilight-Star-Wars-Legends/dp/0553575171/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622228022&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 3.7
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 94.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 232.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.96
+          },
+          {
+            "bindwise": "Cassette",
+            "price": 36.73
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-planet-of-twilight/9200000110949957/?bltgh=ijzlwFutGqP2KYxd8yJIYw.2_9.11.ProductTitle",
+        "promoPrice": 9.05,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Crystal Star",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Crystal-Star-Vonda-McIntyre/dp/0553571745/ref=sr_1_8?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+Crystal+Star&qid=1622228058&sr=8-8",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 15.29
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/the-crystal-star/1001004000969379/?bltgh=pTpj39IAsdb44FGkLD1JwQ.2_9.12.ProductTitle",
+        "promoPrice": 11.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Before the Storm",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Shield of Lies",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Tyrant's Test",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The New Rebellion",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Ambush at Corellia",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Assault at Selonia",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Showdown at Centerpoint",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Specter of the Past",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Specter-Past-Star-Legends-Thrawn/dp/0553298046/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622228225&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 5.1
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 44.53
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.43
+          },
+          {
+            "bindwise": "Cassette",
+            "price": 103.8
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/specter-of-the-past/1001004000969223/?bltgh=i33xdxpO-hYEDFOx5mtF9A.t7G-Ch7A96FSauHy7aRBlg_0_7.8.ProductTitle",
+        "promoPrice": 9.49,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Vision of the Future",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Vision-Future-02-Timothy-Zahn/dp/0553578790/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Vision+of+the+Future&qid=1622228270&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 5.1
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 142.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 68.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.99
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/vision-of-the-future/1001004001332061/?bltgh=q3o3x-2szTtP5VQRa5hBlg.2_9.10.ProductTitle",
+        "promoPrice": 8.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 8.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 15.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Scourge",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Fool's Bargain",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Survivor's Quest",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Survivors-Timothy-Zahn/dp/0099472635/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622228404&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 121.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.5
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/survivor-s-quest/1001004002327776/?bltgh=vknUS3AIif0F51TwBC5Kdg.2_9.10.ProductTitle",
+        "promoPrice": 14.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 14.99
+          },
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 16.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 26.79
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Golden Globe",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Lyric's World",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Promises",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Anakin's Quest",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Vader's Fortress",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Kenobi's Blade",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Heirs of the Force",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Shadow Academy",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Lost Ones",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Lightsabers ",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Darkest Knight",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Jedi Under Siege",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Shards of Alderaan",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Diversity Alliance",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Delusions of Grandeur",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Jedi Bounty",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Emperor's Plague",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Return to Ord Mantell",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Trouble on Cloud City",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Crisis at Crystal Reef ",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Vector Prime",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Vector-Prime-Star-Legends-Order/dp/0345428455/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Vector+Prime&qid=1622228543&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 101.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.46
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 11.99
+          },
+          {
+            "bindwise": "Cassette",
+            "price": 37.15
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars/1001004000970048/?bltgh=ogYwNB895q1XyjIPgDdE7Q.kqKg5zjE-wvijrdiiW5G2A_0_7.8.ProductTitle",
+        "promoPrice": 12.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 12.99
+          },
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Dark Tide I: Onslaught",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Dark-Tide-I-Onslaught-02/dp/0345428544/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Dark+Tide+I%3A+Onslaught&qid=1622228615&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.45
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/dark-tide-onslaught/1001004000945777/?bltgh=gRy735FdmC-0oAsZduhPOA.rOFy92-T2m2bSBdPVTxLug_0_7.8.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.89
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Dark Tide II: Ruin",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Dark-Tide-II-Ruin-03/dp/0345428560/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Dark+Tide+II%3A+Ruin&qid=1622228663&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 13.31
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/ruin-star-wars-legends-the-new-jedi-order/1001004000945778/?bltgh=hNokwepDnQ75YAfmgcJFnA.2_9.11.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Agents of Chaos I: Hero's Trial",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Agents-Chaos-Heros-James-Luceno/dp/0345428609/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Agents+of+Chaos+I%3A+Hero%27s+Trial&qid=1622228731&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 13.6
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.42
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/hero-s-trial-star-wars-legends-the-new-jedi-order/1001004000970066/?bltgh=r9l39uE9PumkNRKKw35PlQ.2_9.11.ProductTitle",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 51.08
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Agents of Chaos II: Jedi Eclipse",
+    "websitePrices": [
+      {
+        "link": "https://www.bol.com/nl/p/jedi-eclipse-star-wars-legends-the-new-jedi-order/1001004001381293/?bltgh=u1yln3-nlgYV7MnOn3tLmQ.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      },
+      {
+        "link": "https://www.amazon.nl/Jedi-Eclipse-Legends-Order-Agents/dp/0345428595/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Agents+of+Chaos+II%3A+Jedi+Eclipse&qid=1622820511&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.6
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Balance Point",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Balance-Point-Star-Wars-6/dp/0345428587/ref=sr_1_5?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Balance+Point&qid=1622228794&sr=8-5",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.0
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 94.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 10.62
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.0
+          },
+          {
+            "bindwise": "Cassette",
+            "price": 105.99
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/balance-point/1001004001227879/?bltgh=lB2DYoIy-4oeb2PcInJP3w.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Recovery",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Edge of Victory I: Conquest",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Conquest-Star-Wars-Legends-Victory/dp/0345428641/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Edge+of+Victory+I%3A+Conquest&qid=1622229230&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 6.63
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.98
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-the-new-jedi-order-edge-of-victory-i-conquest/9200000110949279/?bltgh=hoEjIaBmUIWaeTACvO5EZA.2_9.10.ProductTitle",
+        "promoPrice": 9.05,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Edge of Victory II: Rebirth",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Rebirth-Star-Wars-Legends-Victory/dp/0345446100/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Edge+of+Victory+II%3A+Rebirth&qid=1622229257&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 16.95
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.18
+          },
+          {
+            "bindwise": "Cassette",
+            "price": 110.54
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-the-new-jedi-order-edge-of-victory-ii-rebirth/9200000110946711/?bltgh=uBz8UykIToGvYA-NMR9I6Q.2_9.10.ProductTitle",
+        "promoPrice": 9.29,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Star by Star",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Legends/dp/0345428676/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+New+Jedi+Order+star+by+star&qid=1622229404&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 8.75
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 88.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 15.34
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-by-star/1001004001757336/?bltgh=u7eaUj72xlS6gTESe29AgA.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Dark Journey",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Dark-Journey-Star-Wars-Legends/dp/0345428692/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+New+Jedi+Order+Dark+Journey&qid=1622229438&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 8.35
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/dark-journey/1001004001617987/?bltgh=p2ERiDb6PAwE1zVOSb9EBQ.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Enemy Lines I: Rebel Dream",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Order-Enemy-Lines/dp/0099410338/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Enemy+Lines+I%3A+Rebel+Dream&qid=1622229596&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 15.95
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.15
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/rebel-dream-star-wars-legends/1001004001611954/?bltgh=oHdmEP4gTDxAaLDLSXBAbg.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Enemy Lines II: Rebel Stand",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Rebel-Stand-Legends-Enemy-Lines/dp/0345428684/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Enemy+Lines+II%3A+Rebel+Stand&qid=1622229634&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.6
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 5.08
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/rebel-stand-star-wars-legends/1001004001679931/?bltgh=msTRS2EwhQ9PvhXcMjBMPQ.2_9.10.ProductTitle",
+        "promoPrice": 6.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 6.99
+          },
+          {
+            "bindwise": "E-book",
+            "price": 10.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Traitor",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Jedi-Order-Traitor/dp/0099410354/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+New+Jedi+Order+Traitor&qid=1622229670&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.21
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/traitor/1001004001719406/?bltgh=n2nHxAGjGKyUcuE9KDlGMA.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Destiny's Way",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Destinys-Way-Walter-Jon-Williams/dp/0345428749/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+New+Jedi+Destiny%27s+Way&qid=1622229703&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.98
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 88.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.2
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Ylesia",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Force Heretic I: Remnant",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Force-Heretic-01-Remnant-15/dp/0345428706/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622229793&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 8.55
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.09
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.63
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/remnant-star-wars-legends-the-new-jedi-order/1001004001915934/?bltgh=s8-NoPskV1PwHeBikgVL-A.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Force Heretic II: Refugee",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Order-Heretic-Refugee/dp/0099410370/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Force+Heretic+II%3A+Refugee&qid=1622229858&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.6
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 17.5
+          },
+          {
+            "bindwise": "Cd",
+            "price": 84.14
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/refugee-star-wars-legends-the-new-jedi-order/1001004001915935/?bltgh=iuREoJuHkTGdgruNfyRELw.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Force Heretic III: Reunion",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Force-Heretic-III-Reunion-17/dp/0345428722/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622229891&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.17
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.83
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.55
+          },
+          {
+            "bindwise": "Cd",
+            "price": 40.97
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Final Prophecy",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Final-Prophecy-Star-Wars-Legends/dp/0345428757/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+New+Jedi+The+Final+Prophecy&qid=1622229928&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 6.92
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.28
+          },
+          {
+            "bindwise": "Cd",
+            "price": 55.63
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/the-final-prophecy/1001004002146297/?bltgh=iZpVDiqlzNo7rIbP-rdPCw.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 10.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Unifying Force",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Unifying-Force-Star-Wars-Legends/dp/0345428536/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+Unifying+Force&qid=1622229959&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.12
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 94.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.63
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.49
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/the-unifying-force/1001004002327729/?bltgh=gTc7xuPRM7dNsBgnPKhH7A.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Joiner King",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Joiner-King-Star-Wars-Legends/dp/0345463048/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+Joiner+King&qid=1622230005&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.5
+          },
+          {
+            "bindwise": "Cd",
+            "price": 60.4
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/the-joiner-king/1001004002431448/?bltgh=neSh2yFFiVxV3-dqZ5ZNdg.lL0B1dQqcQvti9PBQm5M3w_0_7.8.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Unseen Queen",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Dark-Unseen-Queen/dp/0099491060/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+Unseen+Queen&qid=1622230041&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.59
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-dark-nest-ii-the-unseen-queen/9200000110923585/?bltgh=iwMNUTtq6MtOEfpHq4ZMPA.2_9.12.ProductTitle",
+        "promoPrice": 13.57,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 10.99
+          },
+          {
+            "bindwise": "Luisterboek",
+            "price": 13.57
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Swarm War",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Denning-Star-Wars-Dark-Swarm/dp/0099491079/ref=sr_1_4?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=The+Swarm+War&qid=1622230072&sr=8-4",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.17
+          },
+          {
+            "bindwise": "Cd",
+            "price": 40.97
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/the-swarm-war/1001004002539542/?bltgh=lOq6U8aNGFINWnaJbMpFrg.2_9.11.ProductTitle",
+        "promoPrice": 12.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Betrayal",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Betrayal-Star-Legends-Legacy-Force/dp/0345477359/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Legacy+of+the+Force+Betrayal&qid=1622230125&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 101.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.27
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.9
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars/1001004004963470/?bltgh=pt-IFVCa8X--Xo2lrINP6A.o3TCv3ttzD0IUWbgQYVNjQ_0_7.8.ProductTitle",
+        "promoPrice": 13.59,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 13.59
+          },
+          {
+            "bindwise": "E-book",
+            "price": 10.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Bloodlines",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Bloodlines-Star-Legends-Legacy-Force/dp/0345477510/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622230226&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 12.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.46
+          },
+          {
+            "bindwise": "Cd",
+            "price": 117.06
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/bloodlines/1001004002772037/?bltgh=quRs9fh-jqRTrj3VIr1NGA.2_9.11.ProductTitle",
+        "promoPrice": 8.69,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 8.69
+          },
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 49.68
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Tempest",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Tempest-Star-Legends-Legacy-Force/dp/0345477529/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Legacy+of+the+Force+Tempest&qid=1622230280&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 20.05
+          },
+          {
+            "bindwise": "Cd",
+            "price": 25.54
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/tempest/1001004002950622/?bltgh=l2f-K727kxT4PKu9VDRH3Q.oHl0RcLZzZmlxrjz-aZDuA_0_7.8.ProductTitle",
+        "promoPrice": 6.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Exile",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Exile-Star-Legends-Legacy-Force/dp/0345477537/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622230314&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.82
+          },
+          {
+            "bindwise": "Cd",
+            "price": 76.28
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/exile/1001004002950623/?bltgh=pEIjDWZAw4mTHVJVd4dH-A.onrObDR837cnQ9iIigJFrA_0_7.8.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Sacrifice",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Sacrifice-Star-Legends-Legacy-Force/dp/0345477413/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Legacy+of+the+force+Sacrifice&qid=1622230375&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 94.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.46
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/sacrifice/1001004006036956/?bltgh=lR3fpzl3RGhsP0PQgPNIAw.2_9.12.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Inferno",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Inferno-Star-Legends-Legacy-Force/dp/0345477553/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Legacy+of+the+force+Inferno&qid=1622230457&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 12.5
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.0
+          },
+          {
+            "bindwise": "Cd",
+            "price": 109.41
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/inferno/1001004005548151/?bltgh=jjWSGgdftDderPcSJqFFDg.2_9.11.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          },
+          {
+            "bindwise": "Audioboek CD",
+            "price": 110.28
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Fury",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Allston-Star-Wars-Legacy-Force/dp/0099492075/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622230489&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 10.83
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 20.76
+          },
+          {
+            "bindwise": "Cd",
+            "price": 101.31
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/fury/1001004005035132/?bltgh=pzvi2Y7cmk7ke8-TTHtMpQ.2_9.11.ProductTitle",
+        "promoPrice": 6.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Revelation",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Revelation-Star-Legends-Legacy-Force/dp/034547757X/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Legacy+of+the+force+Revelation&qid=1622230523&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 12.45
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/revelation/1001004005963588/?bltgh=giKtWL1f9tq2sx5LUw5Arg.2_9.11.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Invincible",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Legacy-Force-Invincible/dp/0099491184/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622230558&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 94.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 4.97
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 10.23
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-legacy-of-the-force-invincible/9200000110911932/?bltgh=hLuZ-JNPAbxAG6SvrGNMWw.2_9.10.ProductTitle",
+        "promoPrice": 13.59,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Crosscurrent",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Crosscurrent-Star-Legends-Paul-Kemp/dp/0345509056/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=star+wars+Crosscurrent&qid=1622230607&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 8.0
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/crosscurrent/1001004007799636/?bltgh=jRqakXcdu0P3FopyJOFBnA.2_9.10.ProductTitle",
+        "promoPrice": 6.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Riptide",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Kemp-P-Star-Wars-Riptide/dp/0099542846/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622230642&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.33
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 20.63
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/riptide/1001004010939840/?bltgh=jiPdYG0IMxTFEfpBDg9IxQ.2_9.10.ProductTitle",
+        "promoPrice": 6.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Millennium Falcon",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Outcast",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Fate-Jedi-Outcast/dp/0099542706/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622230780&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 101.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.98
+          },
+          {
+            "bindwise": "Cd",
+            "price": 54.42
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/outcast/1001004007647096/?bltgh=lWmDkkQwlUaO8x8VfF5ORg.2_9.10.ProductTitle",
+        "promoPrice": 10.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Omen",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Fate-Jedi-Omen/dp/0099542722/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Fate+of+the+Jedi+Omen&qid=1622230838&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.85
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/omen/1001004007679961/?bltgh=oqJN-4VXHCRa0l6xgzhGDQ.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 29.95
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Abyss",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Abyss-Star-Wars-Legends-Fate/dp/0345509196/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Fate+of+the+Jedi+Abyss&qid=1622230885&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.06
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars/1001004008195291/?bltgh=tPxg2UvoS0Ip6h0j0EpG0A.2_9.11.ProductTitle",
+        "promoPrice": 16.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 16.99
+          },
+          {
+            "bindwise": "E-book",
+            "price": 10.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 16.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 31.89
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Backlash",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Allston-Star-Wars-Fate-Backlash/dp/0099542749/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Fate+of+the+Jedi+Backlash&qid=1622230909&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 10.35
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 142.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 13.13
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/backlash/1001004010612194/?bltgh=hjZV9bIm-pfYT8eA8Y1PXQ.2_9.11.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Allies",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Golden-Star-Wars-Fate-Allies/dp/0099542757/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Fate+of+the+Jedi+Allies&qid=1622230947&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 11.14
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.93
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/allies/1001004010612196/?bltgh=ihtKaTsqHNRjsbpzi0lBmQ.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 17.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Vortex",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Fate-Jedi-Vortex/dp/0099542765/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622231005&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 6.66
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 26.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 19.17
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.25
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/vortex/1001004011673238/?bltgh=iTUSPpwc4eXJcG3D-DBEQQ.2_9.11.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 26.83
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Conviction",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Fate-Jedi-Conviction/dp/0099542773/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622231050&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 11.14
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 39.17
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/conviction/9200000000668574/?bltgh=ii9zxvZSaeyGDu5Gv19HOg.tZ3ddpvmY51Cxd8UpjFLHw_0_7.9.ProductTitle",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 30.45
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Ascension",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Fate-Jedi-Ascension/dp/0099542781/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Fate+of+the+Jedi+Ascension&qid=1622231092&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 6.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 22.35
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.5
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.36
+          },
+          {
+            "bindwise": "Cd",
+            "price": 140.05
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/ascension/9200000001582996/?bltgh=o-YJDGTAhtbL8f8BIT1H2Q.2_9.12.ProductTitle",
+        "promoPrice": 6.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 6.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 31.32
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Apocalypse",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Apocalypse-Star-Wars-Legends-Fate/dp/0345509234/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622231135&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.6
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 32.29
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 16.61
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Crucible",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Crucible-Troy-Denning/dp/0099542935/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Fate+of+the+Jedi+Crucible&qid=1622231169&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.94
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars/9200000023410589/?bltgh=v4pi5cPddjzdGBlEROFMhw.2_9.11.ProductTitle",
+        "promoPrice": 16.99,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 10.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 16.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 31.89
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Tales from the Mos Eisley Cantina",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Tales-Mos-Eisley-Cantina-Legends/dp/0553564684/ref=tmm_mmp_swatch_0?_encoding=UTF8&qid=1622231233&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 3.7
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.33
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Tales from Jabba's Palace",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Tales of the Bounty Hunters",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Tales-Bounty-Hunters-Star-Legends/dp/0553568167/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Tales+of+the+Bounty+Hunters&qid=1622231287&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 4.53
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.95
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/tales-of-the-bounty-hunters/1001004001236407/?bltgh=sJ6q9SOORjk9EQaulgFNJQ.2_9.10.ProductTitle",
+        "promoPrice": 7.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 20.29
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 59.61
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Tales from the Empire",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Tales-Empire-Star-Wars-Legends/dp/0553578766/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Tales+from+the+Empire&qid=1622231321&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 4.43
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 209.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.85
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Tales from the New Republic",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Star Wars: Science Adventures",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Tarkin",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Luceno-J-Star-Wars-Tarkin/dp/1784750077/ref=sr_1_3?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Tarkin&qid=1622231396&sr=8-3",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.42
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/tarkin/9200000045404312/?bltgh=l7SZRl2zhBi-T8MZj0dCQA.2_9.10.ProductTitle",
+        "promoPrice": 13.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 13.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 51.08
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "A New Dawn",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Heir to the Jedi",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-John-Jackson-Miller/dp/0099590883/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=A+New+Dawn&qid=1622231458&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.29
+          },
+          {
+            "bindwise": "Cd",
+            "price": 40.83
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/a-new-dawn/9200000039034447/?bltgh=ttUcr4AcvuR-soINYmxH4Q.2_9.11.ProductTitle",
+        "promoPrice": 9.49,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Dark Disciple",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Golden-Star-Wars-Dark-Disciple/dp/0099580136/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Dark+Disciple&qid=1622231527&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.5
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.18
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/dark-disciple/9200000053135995/?bltgh=nk5pwow7ZweUQLWw2a1Aaw.2_9.10.ProductTitle",
+        "promoPrice": 7.69,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.69
+          },
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Luisterboek",
+            "price": 20.92
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 11.79
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 33.67
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Aftermath",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Aftermath-Chuck-Wendig/dp/1784750034/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=NQ6BLG93RCQM&dchild=1&keywords=aftermath+star+wars&qid=1622231545&sprefix=Aftermath+%2Caps%2C172&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.69
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 24.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 11.69
+          },
+          {
+            "bindwise": "Cd",
+            "price": 39.28
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-aftermath/9200000091585063/?bltgh=ktTrHn6Ozi2d6t6IuixNhQ.2_9.10.ProductTitle",
+        "promoPrice": 13.25,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Lost Stars",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Lost-Stars-Claudia-Gray/dp/1405277882/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Lost+Stars&qid=1622231626&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 9.79
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-the-force-awakens-lost-stars-journey-to-star-wars/9200000032330086/?s2a=#productTitle",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 7.99
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 16.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Smuggler's Run: A Han Solo & Chewbacca Adventure",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "The Weapon of a Jedi: A Luke Skywalker Adventure",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Moving Target: A Princess Leia Adventure",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Battlefront: Twilight Company",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Battlefront-Twilight-Company/dp/1784750042/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Battlefront%3A+Twilight+Company&qid=1622231657&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 18.95
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 11.95
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/battlefront/9200000058461512/?bltgh=oYjWs8bZAvFrRQHfn5lGlQ.2_9.11.ProductTitle",
+        "promoPrice": 8.79,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.79
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Before the Awakening",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Erwachen-offizielle-Vorgeschichte/dp/3833232587/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Before+the+Awakening+star+wars&qid=1622231727&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 9.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Bloodline",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Gray-C-Star-Wars-Bloodline/dp/0099594285/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622231750&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 9.1
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 408.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.29
+          },
+          {
+            "bindwise": "Cd",
+            "price": 40.62
+          },
+          {
+            "bindwise": "Pocket",
+            "price": 23.99
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/bloodline/9200000059687150/?bltgh=q7IBY0ObZt-iu9--0nhJxA.2_9.11.ProductTitle",
+        "promoPrice": 10.99,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 10.99
+          },
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Luisterboek",
+            "price": 20.38
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 11.39
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 52.2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Life Debt",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Aftermath-Life-Debt/dp/1784750050/ref=sr_1_3?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Life+Debt&qid=1622231788&sr=8-3",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.31
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 214.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 7.69
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-aftermath/9200000064275746/?bltgh=s8fVMopgCanBobB8pZBMeg.2_9.11.ProductTitle",
+        "promoPrice": 7.69,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 7.69
+          },
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.89
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Ahsoka",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Catalyst: A Rogue One Novel",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Catalyst-Star-Wars-Rogue-Novel/dp/1101967005/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622231848&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 6.55
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 121.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 11.64
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.95
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/catalyst/9200000071349826/?bltgh=lPABezUJCCFLQ7AaAM9GHA.2_9.10.ProductTitle",
+        "promoPrice": 9.39,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 5.69
+          },
+          {
+            "bindwise": "Luisterboek",
+            "price": 20.92
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 9.39
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 50.33
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Empire's End",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Aftermath-Empires-Trilogy/dp/0099594293/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Empire%27s+End&qid=1622231897&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 7.96
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 26.83
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.89
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/empire-s-end/9200000076741034/?s2a=#productTitle",
+        "promoPrice": 11.99,
+        "bookPrices": [
+          {
+            "bindwise": "Luisterboek",
+            "price": 22.65
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 27.69
+          },
+          {
+            "bindwise": "Pocket",
+            "price": 11.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Thrawn",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/STAR-WARS-THRAWN-HC-1/dp/0345511271/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1622231921&sr=8-4",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 5.88
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 18.99
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 14.1
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.19
+          },
+          {
+            "bindwise": "Cd",
+            "price": 54.5
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/thrawn/9200000010010263/?s2a=#productTitle",
+        "promoPrice": 31.99,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 9.49
+          },
+          {
+            "bindwise": "Luisterboek",
+            "price": 22.65
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.49
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 31.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Guardians of the Whills",
+    "websitePrices": [
+    ]
+  },
+  {
+    "bookName": "Rebel Rising",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/STAR-ROGUE-REBEL-RISING-NOVEL/dp/1484780833/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1622232039&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 17.99
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars/9200000058054070/?s2a=#productTitle",
+        "promoPrice": 20.99,
+        "bookPrices": [
+          {
+            "bindwise": "Luisterboek",
+            "price": 22.65
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 27.21
+          },
+          {
+            "bindwise": "Hardcover",
+            "price": 20.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Battlefront II: Inferno Squad",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Star-Wars-Battlefront-II-Inferno-Kommando/dp/3833235683/ref=sr_1_2?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Battlefront+II%3A+Inferno+Squad&qid=1622232189&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Paperback",
+            "price": 14.99
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/battlefront-ii/9200000088142663/?bltgh=giapZ6QGzziDEa-vIY1PBw.2_9.14.ProductTitle",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 18.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Phasma",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/Phasma-Star-Wars-Dawson-Delilah/dp/1524799157/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Phasma&qid=1622232209&sr=8-1",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Kindle-editie",
+            "price": 5.88
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 778.9
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 6.19
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/phasma-journey-to-star-wars/9200000088144487/?s2a=#productTitle",
+        "promoPrice": 12.49,
+        "bookPrices": [
+          {
+            "bindwise": "E-book",
+            "price": 4.99
+          },
+          {
+            "bindwise": "Luisterboek",
+            "price": 20.38
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 12.49
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "Leia, Princess of Alderaan",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/STAR-WARS-LEIA-PRINCESS-ALDERAAN/dp/136802663X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622232270&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 94.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.75
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-leia-princess-of-alderaan/9200000090969318/?bltgh=uOZuQIqzImyWOhF0lzhNhg.2_9.10.ProductTitle",
+        "promoPrice": 14.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  },
+  {
+    "bookName": "The Legends of Luke Skywalker",
+    "websitePrices": [
+      {
+        "link": "https://www.amazon.nl/STAR-WARS-LEIA-PRINCESS-ALDERAAN/dp/136802663X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1622232270&sr=8-2",
+        "promoPrice": 0.0,
+        "bookPrices": [
+          {
+            "bindwise": "Hardcover",
+            "price": 94.0
+          },
+          {
+            "bindwise": "Paperback",
+            "price": 8.75
+          }
+        ]
+      },
+      {
+        "link": "https://www.bol.com/nl/p/star-wars-leia-princess-of-alderaan/9200000090969318/?bltgh=uOZuQIqzImyWOhF0lzhNhg.2_9.10.ProductTitle",
+        "promoPrice": 14.99,
+        "bookPrices": [
+        ]
+      }
+    ]
+  }
+]

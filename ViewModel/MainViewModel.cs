@@ -10,8 +10,11 @@ using System.Windows.Controls;
 using Booklist.Model;
 using Booklist.View;
 
+
 using System.Diagnostics;
 using System.Windows.Navigation;
+
+
 
 namespace Booklist.ViewModel
 {
@@ -78,6 +81,7 @@ namespace Booklist.ViewModel
             CurrentPage = MainPage;
             (BookPage.DataContext as DetailVM).DetailPage = BookPage;
             (BookPage.DataContext as DetailVM).MainVM = this;
+            //WebsiteScrapper.ScrapeWebsiteData("https://www.bol.com/nl/p/dark-journey/1001004001617987/?bltgh=p2ERiDb6PAwE1zVOSb9EBQ.2_9.10.ProductTitle");
         }
 
         public void NextBook(Book book)

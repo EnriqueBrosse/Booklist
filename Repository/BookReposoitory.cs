@@ -248,5 +248,58 @@ namespace Booklist.Repository
             SaveBooks();
         }
 
+        public static void ScrapData()
+        {
+            DateTime date = DateTime.Today;
+            
+            string path = @"..\..\Resources\WebScrapData\" + date.Day + "-" +date.Month + "-" + date.Year  + ".json";
+            // we don't want to over do the web scraping so it doens't fuck with the websites policies 
+            if (File.Exists(path))
+            {
+                return;
+            }
+            else
+            {
+                // scrape the website  
+                List<WebScrapeJsonData> webscaperData = new List<WebScrapeJsonData>();
+                for (int i = 0; i < _bookList.Count; i++)
+                {
+                    WebScrapeJsonData jsonData = new WebScrapeJsonData();
+                    jsonData.BookName = _bookList[i].Name;
+                    jsonData.WebsitePrices = new List<WebsitePrice>();
+                    Console.WriteLine(i);
+                    Console.WriteLine(_bookList[i].Name);
+                    for (int j = 0; j < _bookList[i].Links.Length; j++)
+                    {
+                        string website = _bookList[i].Links[j];
+                        WebsitePrice price = WebsiteScrapper.ScrapeWebsiteData(website);
+                        if (price != null)
+                        {
+                            jsonData.WebsitePrices.Add(price);
+                        }
+                    }
+                    webscaperData.Add(jsonData);
+                }
+                using (StreamWriter file = new StreamWriter(path))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    serializer.Serialize(file, webscaperData);
+                }
+            }
+        }
+
+        private static WebScrapeJsonData ScrapBook(Book book)
+        {
+            WebScrapeJsonData returnvalue = new WebScrapeJsonData();
+            returnvalue.BookName = book.Name;
+            returnvalue.WebsitePrices = new List<WebsitePrice>();
+            for (int i = 0; i < book.Links.Length; i++)
+            {
+                WebsitePrice price = new WebsitePrice();
+                returnvalue.WebsitePrices.Add(price);
+            }
+            return returnvalue; 
+        }
+
     }
 }

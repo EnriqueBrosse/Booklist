@@ -150,7 +150,7 @@ namespace Booklist.ViewModel
             Eras.Add("All");
             SelectedEra = "All";
 
-            BookReposoitory.ScrapData();
+            //BookReposoitory.ScrapData();
         }
     }
 }

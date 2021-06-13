@@ -5,28 +5,40 @@ using System.Text;
 using System.Threading.Tasks;
 
 using HtmlAgilityPack;
+using System.Threading;
+
 namespace Booklist.Model
 {
     class WebsiteScrapper
     {
+        private static Random _rand = new Random();
         public static WebsitePrice ScrapeWebsiteData(string website)
         {
             if (website.Contains("amazon"))
             {
-                // amazon is sometimes a bitch and doesn't want to give data 
+
+                int nextRand = _rand.Next(5, 15);
+                Thread.Sleep(nextRand * 1000);
                 Tuple<WebsitePrice, bool> temp = ScrapeAmazonData(website);
                 while (!temp.Item2)
                 {
+                    Console.WriteLine("last amount of seconds " + nextRand + " trying again on the amazon Website");
+                    nextRand = _rand.Next(5, 15);
+                    Thread.Sleep(nextRand * 1000); 
                     temp = ScrapeAmazonData(website);
                 }
                 return temp.Item1;
             }
             else if (website.Contains("bol.com"))
             {
+                int nextRand = _rand.Next(2, 11);
+                Thread.Sleep(nextRand * 1000);
                 return ScrapeBolData(website);
             }
             else if (website.Contains("standaardboekhandel.be"))
             {
+                int nextRand = _rand.Next(5, 15);
+                Thread.Sleep(nextRand * 1000);
                 return ScrapeStandaardBoekHandelData(website);
             }
             return null;
@@ -181,6 +193,7 @@ namespace Booklist.Model
 
         private static Tuple<WebsitePrice,bool> ScrapeAmazonData(string website)
         {
+
             HtmlAgilityPack.HtmlWeb web = new HtmlAgilityPack.HtmlWeb();
             HtmlAgilityPack.HtmlDocument doc = web.Load(website);
             WebsitePrice returnvalue = new WebsitePrice();
@@ -231,6 +244,7 @@ namespace Booklist.Model
                         if (strings[j].Contains("€ "))
                         {
                             strings[j] = strings[j].Replace("€ ", "");
+                            strings[j] = strings[j].Replace(".", "");
                             bookPrice.Price = Convert.ToDouble(strings[j]);
                             break;
                         }

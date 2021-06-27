@@ -62,14 +62,13 @@ namespace Booklist.Repository
                 return books;
             }
 
-            List<Book> booklist = GetBooks();
             List<Book> returnValue = new List<Book>();
             bool isOwned = owned.Equals("True");
-            for (int i = 0; i < booklist.Count; i++)
+            for (int i = 0; i < books.Count; i++)
             {
-                if (booklist[i].Owned == isOwned)
+                if (books[i].Owned == isOwned)
                 {
-                    returnValue.Add(booklist[i]);
+                    returnValue.Add(books[i]);
                 }
             }
             return returnValue;
@@ -81,14 +80,13 @@ namespace Booklist.Repository
             {
                 return books;
             }
-            List<Book> booklist = GetBooks();
             List<Book> returnValue = new List<Book>();
             bool isLegends = legends.Equals("True");
-            for (int i = 0; i < booklist.Count; i++)
+            for (int i = 0; i < books.Count; i++)
             {
-                if (booklist[i].Legends == isLegends)
+                if (books[i].Legends == isLegends)
                 {
-                    returnValue.Add(booklist[i]);
+                    returnValue.Add(books[i]);
                 }
             }
             return returnValue;

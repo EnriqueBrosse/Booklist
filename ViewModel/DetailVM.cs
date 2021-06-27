@@ -174,6 +174,7 @@ namespace Booklist.ViewModel
         {
             BookReposoitory.SaveBooks(_currentBook, copiedBook);
             CurrentBook = copiedBook;
+            MainVM.UpdateOverviewVM(); 
         }
 
         private bool IsValidLink(string url)

@@ -31,7 +31,7 @@ namespace Booklist.ViewModel
                 if (_selectedEra.Equals("All"))
                 {
                     Books = BookReposoitory.GetBooks();
-                    Series = BookReposoitory.GetSeriesFromEra("all",_ownedBool,_legendBool);
+                    Series = BookReposoitory.GetSeriesFromEra("All", _ownedBool,_legendBool);
                 }
                 else
                 {

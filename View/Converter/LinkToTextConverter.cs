@@ -21,15 +21,17 @@ namespace Booklist.View.Converter
             //}
 
             string path = value.ToString();
-            if(path.Contains("amazon"))
-            {
-                return "Amazon";
-            }
-            else if (path.Contains("bol"))
-            {
-                return "bol";
-            }
-            return "other";
+            path = path.Replace("https://www.", "");
+            string[] split = path.Split('/');
+            //if (path.Contains("amazon"))
+            //{
+            //    return "Amazon";
+            //}
+            //else if (path.Contains("bol"))
+            //{
+            //    return "bol";
+            //}
+            return split[0];
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

@@ -35,7 +35,7 @@
 
             </Grid.RowDefinitions>
 
-            <Button Grid.ColumnSpan="2">
+            <Button Grid.ColumnSpan="2" Command="{Binding SaveBookCommand}">
                 <TextBlock Text="Save"></TextBlock>
             </Button>
 

@@ -100,6 +100,21 @@ namespace Booklist.ViewModel
             {
                 index = 0;
             }
+            else if (index == -1)
+            {
+                for (int i = 0; i < books.Count; i++)
+                {
+                    if (books[i].Name.Equals(book.Name))
+                    {
+                        index = i;
+                        break;
+                    }
+                }
+                if (index == -1)
+                {
+                    index = 0;
+                }
+            }
             else
             {
                 index++; 
@@ -124,11 +139,42 @@ namespace Booklist.ViewModel
             {
                 index = books.Count - 1;
             }
+            else if (index == -1)
+            {
+                for (int i = 0; i < books.Count; i++)
+                {
+                    if (books[i].Name.Equals(book.Name))
+                    {
+                        index = i;
+                        break;
+                    }
+                }
+                if (index == -1)
+                {
+                    index = books.Count - 1;
+                }
+            }
             else
             {
                 index--;
             }
             (BookPage.DataContext as DetailVM).CurrentBook = books[index];
+        }
+
+
+        public void UpdateOverviewVM()
+        {
+            OverViewVM overview = (MainPage.DataContext as OverViewVM);
+            string owned = overview.OwnedBool;
+            for (int i = 0; i < overview.OwnedList.Count; i++)
+            {
+                if (!owned.Equals(overview.OwnedList[i]))
+                {
+                    overview.OwnedBool = overview.OwnedList[i];
+                    break;
+                }
+            }
+            overview.OwnedBool = owned; 
         }
     }
 }

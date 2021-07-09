@@ -32,9 +32,12 @@
 
         <Image Grid.Row="2" Grid.ColumnSpan="6" Source="..\Resources/Local Pictures/star_wars_backgroundTamara.png" Stretch="UniformToFill"></Image>
         
-        <ComboBox ItemsSource="{Binding Eras}" SelectedItem="{Binding SelectedEra}" Grid.ColumnSpan="3"/>
+        <ComboBox ItemsSource="{Binding Eras}" SelectedItem="{Binding SelectedEra}" Grid.ColumnSpan="2"/>
 
-        <Button Grid.Column="3" Grid.ColumnSpan="3" Command="{Binding AddBookCommand}">
+        <ComboBox  Grid.Column="2" ItemsSource="{Binding Repositories}" SelectedItem="{Binding CurrentRepository}" Grid.ColumnSpan="2"/>
+
+
+        <Button Grid.Column="4" Grid.ColumnSpan="3" Command="{Binding AddBookCommand}">
             <TextBlock Text="Add Book"></TextBlock>
         </Button>
        

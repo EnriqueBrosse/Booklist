@@ -76,21 +76,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\BaseMedia.cs" />
     <Compile Include="Model\Books2.cs" />
+    <Compile Include="Model\Comic.cs" />
     <Compile Include="Model\WebScrapeJsonData.cs" />
     <Compile Include="Model\WebsiteScrapper.cs" />
+    <Compile Include="Repository\BaseMediaRepository.cs" />
     <Compile Include="Repository\BookReposoitory.cs" />
-    <Compile Include="ViewModel\AddBookVM.cs" />
-    <Compile Include="ViewModel\DetailVM.cs" />
-    <Compile Include="ViewModel\EditBookVM.cs" />
+    <Compile Include="Repository\ComicRepository.cs" />
+    <Compile Include="Repository\RepositoryManager.cs" />
+    <Compile Include="ViewModel\AddMediaViewModels\AddComicVM.cs" />
+    <Compile Include="ViewModel\AddMediaViewModels\AddBookVM.cs" />
+    <Compile Include="ViewModel\DetailViewModels\DetailVM.cs" />
+    <Compile Include="ViewModel\EditMediaViewModels\EditBookVM.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\OverViewVM.cs" />
-    <Compile Include="View\AddBookWindow.xaml.cs">
+    <Compile Include="View\AddMediaWindows\AddBookWindow.xaml.cs">
       <DependentUpon>AddBookWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddMediaWindows\AddComicWindow.xaml.cs">
+      <DependentUpon>AddComicWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Converter\LinkToImageConverter.cs" />
     <Compile Include="View\Converter\LinkToTextConverter.cs" />
-    <Compile Include="View\DetailPage.xaml.cs">
+    <Compile Include="View\DetailPages\DetailPage.xaml.cs">
       <DependentUpon>DetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\EditBook.xaml.cs">
@@ -111,11 +120,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\AddBookWindow.xaml">
+    <Page Include="View\AddMediaWindows\AddBookWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\DetailPage.xaml">
+    <Page Include="View\AddMediaWindows\AddComicWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DetailPages\DetailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,6 +167,7 @@
     </None>
     <EmbeddedResource Include="Resources\Book.json" />
     <EmbeddedResource Include="Resources\Books.json" />
+    <EmbeddedResource Include="Resources\Comics.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

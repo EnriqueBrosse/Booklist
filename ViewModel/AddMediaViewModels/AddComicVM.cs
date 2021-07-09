@@ -11,14 +11,14 @@ namespace Booklist.ViewModel
 {
     using Model;
     using Repository;
-    using View;
-    public class AddBookVM : ViewModelBase
+    using View.AddMediaWindows;
+    public class AddComicVM : ViewModelBase
     {
-        private Book _newBook;
-        public Book NewBook { get { return _newBook; }
-            set { _newBook = value; RaisePropertyChanged("NewBook"); } }
-        public AddBookWindow BookWindow { get; set; }
-        public OverViewVM overViewViewModel { get; set; }
+        private Comic _newComic;
+        public Comic NewComic { get { return _newComic; }
+            set { _newComic = value; RaisePropertyChanged("NewComic"); } }
+        public AddComicWindow ComicWindow { get; set; }
+        public OverViewVM OverViewViewModel { get; set; }
         private RelayCommand _saveBookCommand;
         public RelayCommand SaveBookCommand
         {
@@ -33,8 +33,8 @@ namespace Booklist.ViewModel
         }
         private void SaveBook()
         {
-            BookReposoitory.AddBook(_newBook);
-            overViewViewModel.SelectedSeries = overViewViewModel.SelectedSeries; //this will update the list
+            RepositoryManager.GetInstance().ComicRepository.AddMedia(_newComic);
+            OverViewViewModel.SelectedSeries = OverViewViewModel.SelectedSeries; //this will update the list
         }
 
         private RelayCommand _addLinkCommand;
@@ -51,22 +51,20 @@ namespace Booklist.ViewModel
         }
         void AddLink()
         {
-            if (BookWindow == null)
+            if (ComicWindow == null)
             {
                 return;
             }
-            string data = BookWindow.LinkAddTextBox.Text;
-            BookWindow.LinkAddTextBox.Text = "";
+            string data = ComicWindow.LinkAddTextBox.Text;
+            ComicWindow.LinkAddTextBox.Text = "";
             if (!IsValidLink(data))
             {
                 return;
             }
-            List<string> links = _newBook.Links.ToList<string>();
+            List<string> links = _newComic.Links.ToList<string>();
             links.Add(data);
-            NewBook.Links = links.ToArray();
-            RaisePropertyChanged("CurrentBook");
-            BookWindow.LinkAddTextBox.Text = "";
-            RaisePropertyChanged("NewBook");
+            _newComic.Links = links.ToArray();
+            RaisePropertyChanged("NewComic");
         }
         private RelayCommand _removeLinkCommand;
         public RelayCommand RemoveLinkCommand
@@ -82,21 +80,21 @@ namespace Booklist.ViewModel
         }
         void RemoveLink()
         {
-            if (BookWindow == null)
+            if (ComicWindow == null)
             {
                 return;
             }
-            object data = BookWindow.LinkListBox.SelectedItem;
+            object data = ComicWindow.LinkListBox.SelectedItem;
             if (data == null)
             {
                 return;
             }
             // know it's a string 
             string link = data.ToString();
-            List<string> list = _newBook.Links.ToList<string>();
+            List<string> list = _newComic.Links.ToList<string>();
             list.Remove(link);
-            NewBook.Links = list.ToArray();
-            RaisePropertyChanged("NewBook");
+            _newComic.Links = list.ToArray();
+            RaisePropertyChanged("NewComic");
         }
         private bool IsValidLink(string url)
         {

@@ -129,7 +129,7 @@ namespace Booklist.ViewModel
         }
         private void Save()
         {
-            BookReposoitory.SaveBooks();
+            RepositoryManager.GetInstance().BookReposoitory.SaveMedia();
         }
 
         private RelayCommand _previousBookCommand;
@@ -172,7 +172,7 @@ namespace Booklist.ViewModel
 
         public void Save(Book copiedBook )
         {
-            BookReposoitory.SaveBooks(_currentBook, copiedBook);
+            RepositoryManager.GetInstance().BookReposoitory.SaveMedia(_currentBook, copiedBook);
             CurrentBook = copiedBook;
             MainVM.UpdateOverviewVM(); 
         }

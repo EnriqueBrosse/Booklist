@@ -11,7 +11,7 @@
         <ViewModel:MainViewModel></ViewModel:MainViewModel>
     </Window.DataContext>
     <Grid>
-        <Frame NavigationUIVisibility="Hidden" Content="{Binding CurrentPage}"></Frame>
+        <Frame  NavigationUIVisibility="Hidden" Content="{Binding CurrentPage}"></Frame>
         <Button VerticalAlignment="Bottom"
                 Command="{Binding SwitchPageCommand}"
                 Content="{Binding CommandText}"></Button>

@@ -3,29 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Booklist.Model;
-using System.Reflection;
-using Newtonsoft.Json;
-using System.IO;
 
 namespace Booklist.Repository
 {
-    public class BookReposoitory : BaseMediaRepository<Book>
+    public class ComicRepository : BaseMediaRepository<Comic>
     {
-        public BookReposoitory() : base()
+        public ComicRepository() : base()
         {
-            _filePath = "Booklist.Resources.Books.json";
-            _outputFile = @"..\..\Resources\Books.json";
+            _filePath = "Booklist.Resources.Comics.json";
+            _outputFile = @"..\..\Resources\Comics.json";
         }
 
         public override string ToString()
         {
-            return "Books";
+            return "Comics";
         }
 
         public override List<string> GetSeriesFromEra(string era, string owned, string legends)
         {
-            List<Book> booksFromEra = GetMediaFromEra(era, owned,legends);
+            List<Comic> booksFromEra = GetMediaFromEra(era, owned, legends);
             List<string> series = new List<string>();
             for (int i = 0; i < booksFromEra.Count; i++)
             {
@@ -57,19 +55,19 @@ namespace Booklist.Repository
             return series;
         }
 
-        public override List<Book> GetMediaFromSeries(string series, string era, string owned, string legends)
+        public override List<Comic> GetMediaFromSeries(string series, string era, string owned, string legends)
         {
             if (era.Equals("All"))
             {
-                return GetMedia(owned,legends);
+                return GetMedia(owned, legends);
             }
 
-            List<Book> bookList = GetMediaFromEra(era,owned, legends);
+            List<Comic> bookList = GetMediaFromEra(era, owned, legends);
             if (series.Equals("All"))
             {
                 return bookList;
             }
-            List<Book> returnValue = new List<Book>();
+            List<Comic> returnValue = new List<Comic>();
 
             if (series.Equals("None"))
             {
@@ -85,5 +83,6 @@ namespace Booklist.Repository
             }
             return returnValue;
         }
+
     }
 }

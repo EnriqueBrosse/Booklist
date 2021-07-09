@@ -15,14 +15,15 @@ using System.Windows.Shapes;
 using System.Windows.Navigation;
 using System.Diagnostics;
 
-namespace Booklist.View
+
+namespace Booklist.View.AddMediaWindows
 {
     /// <summary>
-    /// Interaction logic for AddBookWindow.xaml
+    /// Interaction logic for AddComicWindow.xaml
     /// </summary>
-    public partial class AddBookWindow : Window
+    public partial class AddComicWindow : Window
     {
-        public AddBookWindow()
+        public AddComicWindow()
         {
             InitializeComponent();
         }
@@ -38,5 +39,6 @@ namespace Booklist.View
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
             e.Handled = true;
         }
+
     }
 }

@@ -10,17 +10,39 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 
 
-
 namespace Booklist.ViewModel
 {
+    using View.AddMediaWindows;
     using View;
     public class OverViewVM : ViewModelBase
     {
-        public List<Book> Books { get; set; }
+        public List<BaseMedia> Books { get; set; }
         public List<string>Eras { get; set; }
         public List<string> OwnedList { get; set; }
         public List<string> LegendsList { get; set; }
         public List<string> Series { get; set; }
+        public List<string> Repositories { get; set; }
+        private string _currentRepository;
+        public string CurrentRepository
+        {
+            get { return _currentRepository; }
+            set
+            {
+                _currentRepository = value;
+                RepositoryManager repManager = RepositoryManager.GetInstance();
+                repManager.SetCurrentRepository(_currentRepository);
+                RaisePropertyChanged("CurrentRepository");
+
+
+                SelectedSeries = "None";
+                SelectedSeries = "All";
+                SelectedEra = "";
+                SelectedEra = "All";
+
+
+            }
+        }
+
         private string _selectedEra;
         public string SelectedEra
         {
@@ -28,19 +50,40 @@ namespace Booklist.ViewModel
             set
             {
                 _selectedEra = value;
-                if (_selectedEra.Equals("All"))
-                {
-                    Books = BookReposoitory.GetBooks();
-                    Series = BookReposoitory.GetSeriesFromEra("All", _ownedBool,_legendBool);
-                }
-                else
-                {
-                    //_ownedBool = "All";
-                    //_legendBool = "All";
-                    Series = BookReposoitory.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
-                    RaisePropertyChanged("OwnedBool");
-                    RaisePropertyChanged("LegendBool");
 
+                RepositoryManager repManager = RepositoryManager.GetInstance();
+
+                // not the ideal way but it's either doing it here or doing it in the base class
+                // and it's a lot of repeated code but it's either here a mass class or in the base class
+                if (repManager.CurrentRepository is BookReposoitory)
+                {
+                    BookReposoitory tempRepository = repManager.CurrentRepository as BookReposoitory;
+                    if (_selectedEra.Equals("All"))
+                    {
+                        Books = tempRepository.ConvertToBase(tempRepository.GetMedia());
+                        Series = tempRepository.GetSeriesFromEra("All", _ownedBool, _legendBool);
+                    }
+                    else
+                    {
+                        Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
+                        RaisePropertyChanged("OwnedBool");
+                        RaisePropertyChanged("LegendBool");
+                    }
+                }
+                else if (repManager.CurrentRepository is ComicRepository)
+                {
+                    ComicRepository tempRepository = repManager.CurrentRepository as ComicRepository;
+                    if (_selectedEra.Equals("All"))
+                    {
+                        Books = tempRepository.ConvertToBase(tempRepository.GetMedia());
+                        Series = tempRepository.GetSeriesFromEra("All", _ownedBool, _legendBool);
+                    }
+                    else
+                    {
+                        Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
+                        RaisePropertyChanged("OwnedBool");
+                        RaisePropertyChanged("LegendBool");
+                    }
                 }
                 SelectedSeries = "All";
                 RaisePropertyChanged("Series");
@@ -62,15 +105,35 @@ namespace Booklist.ViewModel
             get { return _selectedSeries; }
             set
             {
-                if (value == null)
-                {
-                    Books = BookReposoitory.GetBooksFromEra(_selectedEra, "All","All");
-                    RaisePropertyChanged("Books");
-                    _selectedSeries = "None";
-                    return;
-                }
+                RepositoryManager repManager = RepositoryManager.GetInstance();
+
+                // not the ideal way but it's either doing it here or doing it in the base class
+                // and it's a lot of repeated code but it's either here a mass class or in the base class
                 _selectedSeries = value;
-                Books = BookReposoitory.GetBooksFromSeries(_selectedSeries, _selectedEra, _ownedBool,_legendBool);
+                if (repManager.CurrentRepository is BookReposoitory)
+                {
+                    BookReposoitory tempRepository = repManager.CurrentRepository as BookReposoitory;
+                    if (value == null)
+                    {
+                        Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromEra(_selectedEra, "All", "All"));
+                        RaisePropertyChanged("Books");
+                        _selectedSeries = "None";
+                        return;
+                    }
+                    Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromSeries(_selectedSeries, _selectedEra, _ownedBool, _legendBool));
+                }
+                else if (repManager.CurrentRepository is ComicRepository)
+                {
+                    ComicRepository tempRepository = repManager.CurrentRepository as ComicRepository;
+                    if (value == null)
+                    {
+                        Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromEra(_selectedEra, "All", "All"));
+                        RaisePropertyChanged("Books");
+                        _selectedSeries = "None";
+                        return;
+                    }
+                    Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromSeries(_selectedSeries, _selectedEra, _ownedBool, _legendBool));
+                }
                 RaisePropertyChanged("Books");
                 RaisePropertyChanged("SelectedSeries");
             }
@@ -112,31 +175,87 @@ namespace Booklist.ViewModel
 
         private void OpenAddBookWindow()
         {
-            AddBookWindow bookWindow = new AddBookWindow();
-            (bookWindow.DataContext as AddBookVM).overViewViewModel = this;
-            (bookWindow.DataContext as AddBookVM).BookWindow = bookWindow;
-            Book newBook = new Book();
-            if (_legendBool.Equals("True"))
+            RepositoryManager repositoryManager = RepositoryManager.GetInstance();
+            if (repositoryManager.CurrentRepository == repositoryManager.BookReposoitory)
             {
-                newBook.Legends = true;
-            }
-            else if (_legendBool.Equals("False"))
-            {
-                newBook.Legends = false;
-            }
+                AddBookWindow bookWindow = new AddBookWindow();
+                (bookWindow.DataContext as AddBookVM).OverViewViewModel = this;
+                (bookWindow.DataContext as AddBookVM).BookWindow = bookWindow;
+                Book newBook = new Book();
 
-            if (!SelectedEra.Equals("All"))
-            {
-                newBook.Era = SelectedEra;
-            }
+                if (_ownedBool.Equals("True"))
+                {
+                    newBook.Owned = true;
+                }
+                else if (_ownedBool.Equals("False"))
+                {
+                    newBook.Owned = false;
+                }
 
-            if (!SelectedSeries.Equals("All"))
-            {
-                newBook.Series = SelectedSeries;
-            }
+                if (_legendBool.Equals("True"))
+                {
+                    newBook.Legends = true;
+                }
+                else if (_legendBool.Equals("False"))
+                {
+                    newBook.Legends = false;
+                }
+
+                if (!SelectedEra.Equals("All"))
+                {
+                    newBook.Era = SelectedEra;
+                }
+
+                if (!SelectedSeries.Equals("All"))
+                {
+                    newBook.Series = SelectedSeries;
+                }
 
             (bookWindow.DataContext as AddBookVM).NewBook = newBook;
-            bookWindow.ShowDialog();
+                bookWindow.ShowDialog();
+            }
+            else if (repositoryManager.CurrentRepository == repositoryManager.ComicRepository )
+            {
+                AddComicWindow comicWindow = new AddComicWindow();
+                (comicWindow.DataContext as AddComicVM).OverViewViewModel = this;
+                (comicWindow.DataContext as AddComicVM).ComicWindow = comicWindow;
+                Comic newComic = new Comic();
+
+                if (_ownedBool.Equals("True"))
+                {
+                    newComic.Owned = true;
+                }
+                else if (_ownedBool.Equals("False"))
+                {
+                    newComic.Owned = false;
+                }
+
+                if (_legendBool.Equals("True"))
+                {
+                    newComic.Legends = true;
+                }
+                else if (_legendBool.Equals("False"))
+                {
+                    newComic.Legends = false;
+                }
+
+                if (!SelectedEra.Equals("All"))
+                {
+                    newComic.Era = SelectedEra;
+                }
+
+                if (!SelectedSeries.Equals("All"))
+                {
+                    newComic.Series = SelectedSeries;
+                }
+                if (!SelectedEra.Equals("All"))
+                {
+                    newComic.Era = SelectedEra;
+                }
+                
+                (comicWindow.DataContext as AddComicVM).NewComic = newComic;
+                comicWindow.ShowDialog();
+            }
         }
 
         public OverViewVM()
@@ -145,12 +264,88 @@ namespace Booklist.ViewModel
             LegendsList = new List<string> { "True", "False", "All" };
             _ownedBool = "All";
             _legendBool = "All";
-            Books = BookReposoitory.GetBooks();
-            Eras = BookReposoitory.GetEras();
+            Eras = RepositoryManager.GetInstance().BookReposoitory.GetEras();
             Eras.Add("All");
             SelectedEra = "All";
+            Repositories = RepositoryManager.GetInstance().GetRepositoryNames();
+            CurrentRepository = Repositories[0];
+            RaisePropertyChanged("Repositories");
 
             //BookReposoitory.ScrapData();
+        }
+
+        public BaseMedia Next(BaseMedia book)
+        {
+            int index = -1;
+            for (int i = 0; i < Books.Count; i++)
+            {
+                if (Books[i] == book)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            if (index == (Books.Count - 1))
+            {
+                index = 0;
+            }
+            else if (index == -1)
+            {
+                for (int i = 0; i < Books.Count; i++)
+                {
+                    if (Books[i].Name.Equals(book.Name))
+                    {
+                        index = i;
+                        break;
+                    }
+                }
+                if (index == -1)
+                {
+                    index = 0;
+                }
+            }
+            else
+            {
+                index++;
+            }
+            return Books[index];
+        }
+
+        public BaseMedia Previous(BaseMedia book)
+        {
+            int index = -1;
+            for (int i = 0; i < Books.Count; i++)
+            {
+                if (Books[i] == book)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            if (index == 0)
+            {
+                index = Books.Count - 1;
+            }
+            else if (index == -1)
+            {
+                for (int i = 0; i < Books.Count; i++)
+                {
+                    if (Books[i].Name.Equals(book.Name))
+                    {
+                        index = i;
+                        break;
+                    }
+                }
+                if (index == -1)
+                {
+                    index = Books.Count - 1;
+                }
+            }
+            else
+            {
+                index--;
+            }
+            return Books[index];
         }
     }
 }

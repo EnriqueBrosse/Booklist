@@ -9,17 +9,17 @@ using GalaSoft.MvvmLight.CommandWpf;
 using System.Windows.Controls;
 using Booklist.Model;
 using Booklist.View;
-
+using Booklist.Repository;
 
 using System.Diagnostics;
 using System.Windows.Navigation;
-
 
 
 namespace Booklist.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
+
         public OverViewPage MainPage { get; set; } = new OverViewPage();
         public DetailPage BookPage { get; set; } = new DetailPage();
         private Page _currentPage;
@@ -86,82 +86,23 @@ namespace Booklist.ViewModel
 
         public void NextBook(Book book)
         {
-            List<Book> books = (MainPage.DataContext as OverViewVM).Books;
-            int index = -1;
-            for (int i = 0; i < books.Count; i++)
+            BaseMedia media = (MainPage.DataContext as OverViewVM).Next(book);
+            if (media is Book)
             {
-                if (books[i] == book)
-                {
-                    index = i;
-                    break;
-                }
+                Book currentBook = media as Book;
+                (BookPage.DataContext as DetailVM).CurrentBook = currentBook;
             }
-            if (index == (books.Count -1))
-            {
-                index = 0;
-            }
-            else if (index == -1)
-            {
-                for (int i = 0; i < books.Count; i++)
-                {
-                    if (books[i].Name.Equals(book.Name))
-                    {
-                        index = i;
-                        break;
-                    }
-                }
-                if (index == -1)
-                {
-                    index = 0;
-                }
-            }
-            else
-            {
-                index++; 
-            }
-
-            (BookPage.DataContext as DetailVM).CurrentBook = books[index];
         }
 
         public void PreviousBook(Book book)
         {
-            List<Book> books = (MainPage.DataContext as OverViewVM).Books;
-            int index = -1;
-            for (int i = 0; i < books.Count; i++)
+            BaseMedia media = (MainPage.DataContext as OverViewVM).Previous(book);
+            if (media is Book)
             {
-                if (books[i] == book)
-                {
-                    index = i;
-                    break;
-                }
+                Book currentBook = media as Book;
+                (BookPage.DataContext as DetailVM).CurrentBook = currentBook;
             }
-            if (index == 0)
-            {
-                index = books.Count - 1;
-            }
-            else if (index == -1)
-            {
-                for (int i = 0; i < books.Count; i++)
-                {
-                    if (books[i].Name.Equals(book.Name))
-                    {
-                        index = i;
-                        break;
-                    }
-                }
-                if (index == -1)
-                {
-                    index = books.Count - 1;
-                }
-            }
-            else
-            {
-                index--;
-            }
-            (BookPage.DataContext as DetailVM).CurrentBook = books[index];
         }
-
-
         public void UpdateOverviewVM()
         {
             OverViewVM overview = (MainPage.DataContext as OverViewVM);

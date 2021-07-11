@@ -32,14 +32,7 @@ namespace Booklist.ViewModel
                 RepositoryManager repManager = RepositoryManager.GetInstance();
                 repManager.SetCurrentRepository(_currentRepository);
                 RaisePropertyChanged("CurrentRepository");
-
-
-                SelectedSeries = "None";
-                SelectedSeries = "All";
-                SelectedEra = "";
                 SelectedEra = "All";
-
-
             }
         }
 
@@ -50,7 +43,6 @@ namespace Booklist.ViewModel
             set
             {
                 _selectedEra = value;
-
                 RepositoryManager repManager = RepositoryManager.GetInstance();
 
                 // not the ideal way but it's either doing it here or doing it in the base class
@@ -58,35 +50,16 @@ namespace Booklist.ViewModel
                 if (repManager.CurrentRepository is BookReposoitory)
                 {
                     BookReposoitory tempRepository = repManager.CurrentRepository as BookReposoitory;
-                    if (_selectedEra.Equals("All"))
-                    {
-                        Books = tempRepository.ConvertToBase(tempRepository.GetMedia());
-                        Series = tempRepository.GetSeriesFromEra("All", _ownedBool, _legendBool);
-                    }
-                    else
-                    {
-                        Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
-                        RaisePropertyChanged("OwnedBool");
-                        RaisePropertyChanged("LegendBool");
-                    }
+                    Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
                 }
                 else if (repManager.CurrentRepository is ComicRepository)
                 {
                     ComicRepository tempRepository = repManager.CurrentRepository as ComicRepository;
-                    if (_selectedEra.Equals("All"))
-                    {
-                        Books = tempRepository.ConvertToBase(tempRepository.GetMedia());
-                        Series = tempRepository.GetSeriesFromEra("All", _ownedBool, _legendBool);
-                    }
-                    else
-                    {
-                        Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
-                        RaisePropertyChanged("OwnedBool");
-                        RaisePropertyChanged("LegendBool");
-                    }
+                    Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
                 }
                 SelectedSeries = "All";
                 RaisePropertyChanged("Series");
+                RaisePropertyChanged("Books");
             }
         }
         private Book _selectedBook; 
@@ -145,7 +118,7 @@ namespace Booklist.ViewModel
             set
             {
                 _ownedBool = value;
-                SelectedEra = SelectedEra;
+                SelectedSeries = SelectedSeries;
             }
         }
         private string _legendBool;
@@ -155,7 +128,7 @@ namespace Booklist.ViewModel
             set
             {
                 _legendBool = value;
-                SelectedEra = SelectedEra;
+                SelectedSeries = SelectedSeries;
             }
         }
 
@@ -260,16 +233,19 @@ namespace Booklist.ViewModel
 
         public OverViewVM()
         {
+            RepositoryManager.GetInstance().LoadRepositories();
+
             OwnedList = new List<string> { "True", "False", "All" };
             LegendsList = new List<string> { "True", "False", "All" };
             _ownedBool = "All";
             _legendBool = "All";
             Eras = RepositoryManager.GetInstance().BookReposoitory.GetEras();
             Eras.Add("All");
-            SelectedEra = "All";
+            _selectedEra = "All";
             Repositories = RepositoryManager.GetInstance().GetRepositoryNames();
-            CurrentRepository = Repositories[0];
+            CurrentRepository = Repositories[1];
             RaisePropertyChanged("Repositories");
+
 
             //BookReposoitory.ScrapData();
         }

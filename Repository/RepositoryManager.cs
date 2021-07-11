@@ -31,7 +31,7 @@ namespace Booklist.Repository
         {
             RepositoryList.Add(BookReposoitory);
             RepositoryList.Add(ComicRepository);
-            CurrentRepository = RepositoryList[0];
+            CurrentRepository = RepositoryList[1];
         }
 
         public List<string> GetRepositoryNames()
@@ -54,6 +54,14 @@ namespace Booklist.Repository
                     break;
                 }
             }
+        }
+
+        public async void LoadRepositories()
+        {
+            List<Task> parallelTasks = new List<Task>();
+            parallelTasks.Add(BookReposoitory.GetMediaAsync());
+            parallelTasks.Add(ComicRepository.GetMediaAsync());
+            await Task.WhenAll(parallelTasks);
         }
     }
 }

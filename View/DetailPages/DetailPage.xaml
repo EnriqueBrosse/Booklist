@@ -34,7 +34,7 @@
             <RowDefinition Height="20"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Image Source= "..\Resources/Local Pictures/star_wars_backgroundTamara.png"  Grid.RowSpan="3" Stretch="UniformToFill"></Image>
+        <Image Source= "..\..\Resources/Local Pictures/star_wars_backgroundTamara.png"  Grid.RowSpan="3" Stretch="UniformToFill"></Image>
 
         <!-- top grid -->
         <Grid Grid.Row="0">

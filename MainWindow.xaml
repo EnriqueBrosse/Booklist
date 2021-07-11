@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Booklist"
         xmlns:ViewModel="clr-namespace:Booklist.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="Black">
+        Title="MainWindow" Height="720" Width="1080" Background="Black">
     <Window.DataContext>
         <ViewModel:MainViewModel></ViewModel:MainViewModel>
     </Window.DataContext>

@@ -17,9 +17,9 @@ namespace Booklist.Model
         }
         [JsonProperty(PropertyName = "series")]
         public string Series { get; set; }
-        [JsonProperty(PropertyName = "seriesNumber")]
-        public int SeriesNumber { get; set; }
         [JsonProperty(PropertyName = "writer")]
         public string Writer { get; set; }
+        [JsonProperty(PropertyName = "seriesNumber")]
+        public int SeriesNumber { get; set; }
     }
 }

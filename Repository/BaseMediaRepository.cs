@@ -8,15 +8,50 @@ using Booklist.Model;
 using System.Reflection;
 using Newtonsoft.Json;
 using System.IO;
+using System.Windows.Media.Imaging;
 
 namespace Booklist.Repository
 {
-       public class Repository { }
+    public class Repository 
+    { 
+        
+    }
 
     public class BaseMediaRepository<T> : Repository where T : BaseMedia 
     {
         public BaseMediaRepository()
         {
+        }
+
+        public async Task LoadTemplatedValue()
+        {
+            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            using (Stream stream = assembly.GetManifestResourceStream(_filePath))
+            {
+                using (var reader = new StreamReader(stream))
+                {
+                    string json = await reader.ReadToEndAsync();
+                    _baseMedia = JsonConvert.DeserializeObject<List<T>>(json);
+                }
+            }
+            for (int i = 0; i < _baseMedia.Count; i++)
+            {
+                if (_baseMedia[i].ImageURL.Equals(""))
+                {
+                    _baseMedia[i].Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+                }
+                else
+                {
+                    try
+                    {
+                        _baseMedia[i].Image = new BitmapImage(new Uri(_baseMedia[i].ImageURL));
+                    }
+                    catch (Exception)
+                    {
+                        _baseMedia[i].Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+                    }
+                }
+            }
         }
 
         public List<BaseMedia>ConvertToBase(List<T> derivedList)
@@ -33,26 +68,18 @@ namespace Booklist.Repository
 
         protected List<T> _baseMedia;
         protected string _filePath = "Booklist.Resources.BaseMedia.json";
-        public List<T> GetMedia() 
+        public async Task<List<T>> GetMediaAsync() 
         {
             if (_baseMedia != null)
             {
                 return _baseMedia;
             }
-            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
-            using (Stream stream = assembly.GetManifestResourceStream(_filePath))
-            {
-                using (var reader = new StreamReader(stream))
-                {
-                    string json = reader.ReadToEnd();
-                    _baseMedia = JsonConvert.DeserializeObject<List<T>>(json);
-                }
-            }
+            await LoadTemplatedValue();
             return _baseMedia;
         }
         public List<T> GetMedia(string owned, string legends)
         {
-            List<T> legendsBooks = GetMediaByLegends(GetMedia(), legends);
+            List<T> legendsBooks = GetMediaByLegends(_baseMedia, legends);
             List<T> returnResult = GetMediaByOwned(legendsBooks, owned);
             return returnResult;
         }
@@ -101,7 +128,6 @@ namespace Booklist.Repository
             {
                 return _eras;
             }
-            GetMedia();
             _eras = new List<string>();
             for (int i = 0; i < _baseMedia.Count; i++)
             {
@@ -152,12 +178,27 @@ namespace Booklist.Repository
 
         public virtual void SaveMedia(T originalMedia, T mediaToBeReplaced)
         {
-            GetMedia();
             for (int i = 0; i < _baseMedia.Count; i++)
             {
                 if (_baseMedia[i] == originalMedia)
                 {
                     _baseMedia[i] = mediaToBeReplaced;
+                    // replace the image if it changed 
+                    if (_baseMedia[i].ImageURL.Equals(""))
+                    {
+                        _baseMedia[i].Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+                    }
+                    else
+                    {
+                        try
+                        {
+                            _baseMedia[i].Image = new BitmapImage(new Uri(_baseMedia[i].ImageURL));
+                        }
+                        catch (Exception)
+                        {
+                            _baseMedia[i].Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+                        }
+                    }
                     break;
                 }
             }
@@ -166,6 +207,22 @@ namespace Booklist.Repository
 
         public virtual void SaveMedia(T mediaToAdd)
         {
+            // replace the image if it changed 
+            if (mediaToAdd.ImageURL.Equals(""))
+            {
+                mediaToAdd.Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+            }
+            else
+            {
+                try
+                {
+                    mediaToAdd.Image = new BitmapImage(new Uri(mediaToAdd.ImageURL));
+                }
+                catch (Exception)
+                {
+                    mediaToAdd.Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+                }
+            }
             _baseMedia.Add(mediaToAdd);
             SaveMedia();
         }

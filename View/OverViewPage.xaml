@@ -53,11 +53,11 @@
         
         <ComboBox ItemsSource="{Binding LegendsList}" SelectedItem="{Binding LegendBool}" Grid.Row="1" Grid.Column="5"/>
 
-        <ListBox Grid.Row="2" Grid.ColumnSpan="6" Foreground="White" Background="#0000" x:Name="list" ItemsSource="{Binding Books}" SelectedItem="{Binding SelectedBook}" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListBox Name="ItemsBox" Grid.Row="2" Grid.ColumnSpan="6" Foreground="White" Background="#0000" ItemsSource="{Binding Books}" SelectedItem="{Binding SelectedBook}" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Vertical" Width="180" Height="140">
-                        <Image Source="{Binding ImageURL, Converter={StaticResource LinkToImageConverter }}" Height="100" Width="60" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill"></Image>
+                    <StackPanel Orientation="Vertical" Width="250" Height="150">
+                        <Image Source="{Binding Image}" Height="100" Width="60" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill"></Image>
                         <TextBlock Text="{Binding Name}" Margin="10,0" Foreground="White" VerticalAlignment="Center" FontSize="16" TextWrapping="Wrap" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </DataTemplate>

@@ -57,12 +57,15 @@ namespace Booklist.Repository
 
         public override List<Comic> GetMediaFromSeries(string series, string era, string owned, string legends)
         {
+            List<Comic> bookList;
             if (era.Equals("All"))
             {
-                return GetMedia(owned, legends);
+                bookList = GetMedia(owned, legends);
             }
-
-            List<Comic> bookList = GetMediaFromEra(era, owned, legends);
+            else
+            {
+                bookList = GetMediaFromEra(era, owned, legends);
+            }
             if (series.Equals("All"))
             {
                 return bookList;
@@ -82,6 +85,7 @@ namespace Booklist.Repository
                 }
             }
             return returnValue;
+
         }
 
     }

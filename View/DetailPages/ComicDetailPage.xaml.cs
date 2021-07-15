@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 using System.Diagnostics;
 
-namespace Booklist.View
+namespace Booklist.View.DetailPages
 {
     /// <summary>
-    /// Interaction logic for DetailPage.xaml
+    /// Interaction logic for ComicDetailPage.xaml
     /// </summary>
-    public partial class DetailPage : Page
+    public partial class ComicDetailPage : Page
     {
-        public DetailPage()
+        public ComicDetailPage()
         {
             InitializeComponent();
         }
@@ -39,5 +38,6 @@ namespace Booklist.View
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
             e.Handled = true;
         }
+
     }
 }

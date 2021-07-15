@@ -9,20 +9,13 @@ using GalaSoft.MvvmLight.CommandWpf;
 
 namespace Booklist.ViewModel
 {
-    using Model;
-    using View;
-    using Repository;
     public class DetailVM : ViewModelBase
     {
-        public DetailPage DetailPage { get; set; }
         public MainViewModel MainVM { get; set; }
-        private Book _currentBook;
-        public Book CurrentBook
-        {
-            get { return _currentBook; }
-            set { _currentBook = value; RaisePropertyChanged("CurrentBook"); }
-        }
-#region Commands 
+        public string LinkToAdd { get; set; } = "";
+        public string CurrentLink { get; set; }
+
+        #region Commands 
         private RelayCommand _addLinkCommand;
         public RelayCommand AddLinkCommand
         {
@@ -35,22 +28,8 @@ namespace Booklist.ViewModel
                 return _addLinkCommand; 
             }
         }
-        void AddLink()
+        protected virtual void AddLink()
         {
-            if (DetailPage == null)
-            {
-                return;
-            }
-            string data = DetailPage.LinkAddTextBox.Text;
-            DetailPage.LinkAddTextBox.Text = "";
-            if (!IsValidLink(data))
-            {
-                return;
-            }
-            List<string> links = _currentBook.Links.ToList<string>();
-            links.Add(data);
-            _currentBook.Links = links.ToArray();
-            RaisePropertyChanged("CurrentBook");
         }
         private RelayCommand _removeLinkCommand;
         public RelayCommand RemoveLinkCommand
@@ -64,23 +43,8 @@ namespace Booklist.ViewModel
                 return _removeLinkCommand;
             }
         }
-        void RemoveLink()
+        protected virtual void RemoveLink()
         {
-            if (DetailPage == null)
-            {
-                return;
-            }
-            object data = DetailPage.LinkListBox.SelectedItem;
-            if (data == null)
-            {
-                return;
-            }
-            // know it's a string 
-            string link = data.ToString();
-            List<string> list = _currentBook.Links.ToList<string>();
-            list.Remove(link);
-            _currentBook.Links = list.ToArray();
-            RaisePropertyChanged("CurrentBook");
         }
         private RelayCommand _editCommand;
         public RelayCommand EditCommand
@@ -106,30 +70,11 @@ namespace Booklist.ViewModel
                 return _saveCommand;
             }
         }
-        private void OpenScreen()
+        protected virtual void OpenScreen()
         {
-            EditBook editBook = new EditBook();
-            (editBook.DataContext as EditBookVM).CopiedBook =  CopyValue(_currentBook);
-            (editBook.DataContext as EditBookVM).DetailViewModel = this;
-            editBook.ShowDialog();
         }
-        private Book CopyValue(Book bookToCopy)
+        protected virtual void Save()
         {
-            Book returnValue = new Book();
-            returnValue.ImageURL = bookToCopy.ImageURL;
-            returnValue.Legends = bookToCopy.Legends;
-            returnValue.Era = bookToCopy.Era;
-            returnValue.Links = bookToCopy.Links;
-            returnValue.Name = bookToCopy.Name;
-            returnValue.Owned = bookToCopy.Owned;
-            returnValue.ReleaseYear = bookToCopy.ReleaseYear;
-            returnValue.Series = bookToCopy.Series;
-            returnValue.Writer = bookToCopy.Writer;
-            return returnValue;
-        }
-        private void Save()
-        {
-            RepositoryManager.GetInstance().BookReposoitory.SaveMedia();
         }
 
         private RelayCommand _previousBookCommand;
@@ -145,9 +90,8 @@ namespace Booklist.ViewModel
             }
         }
 
-        private void GoToPreviousBook()
+        protected virtual void GoToPreviousBook()
         {
-            MainVM.PreviousBook(_currentBook);
         }
 
         private RelayCommand _nextBookCommand;
@@ -163,21 +107,12 @@ namespace Booklist.ViewModel
             }
         }
 
-        private void GoToNextBook()
+        protected virtual void GoToNextBook()
         {
-            MainVM.NextBook(_currentBook);
         }
-
         #endregion Commands 
 
-        public void Save(Book copiedBook )
-        {
-            RepositoryManager.GetInstance().BookReposoitory.SaveMedia(_currentBook, copiedBook);
-            CurrentBook = copiedBook;
-            MainVM.UpdateOverviewVM(); 
-        }
-
-        private bool IsValidLink(string url)
+        protected bool IsValidLink(string url)
         {
             url = url.ToLower();
             return url.StartsWith("http://") || url.StartsWith("https://");

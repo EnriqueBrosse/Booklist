@@ -4,40 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.CommandWpf;
-
-namespace Booklist.ViewModel
+namespace Booklist.ViewModel.EditMediaViewModels
 {
+    using ViewModel.DetailViewModels;
     using Model;
-    public class EditBookVM : ViewModelBase
+    public class EditBookVM : EditMediaVM
     {
         private Book _copiedBook;
-        public DetailVM DetailViewModel{get;set;}
+        public BookDetailVM DetailViewModel{get;set;}
         public Book CopiedBook
         {
             get { return _copiedBook; }
-            set { _copiedBook = value; RaisePropertyChanged("CopiedBook"); }
+            set { _copiedBook = value; RaisePropertyChanged("CopiedMusicAlbum"); }
         }
-
-        private RelayCommand _saveCommand;
-
-        public RelayCommand SaveCommand
-        {
-            get 
-            {
-                if (_saveCommand == null)
-                {
-                    _saveCommand = new RelayCommand(Save);
-                }
-                return _saveCommand;
-            }
-        }
-
-        private void Save()
+        protected override void Save()
         {
             DetailViewModel.Save(CopiedBook);
+            RaisePropertyChanged("CopiedMusicAlbum");
         }
     }
 }

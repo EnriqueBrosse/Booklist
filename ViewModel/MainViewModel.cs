@@ -9,19 +9,22 @@ using GalaSoft.MvvmLight.CommandWpf;
 using System.Windows.Controls;
 using Booklist.Model;
 using Booklist.View;
+using Booklist.View.DetailPages;
 using Booklist.Repository;
-
+using Booklist.ViewModel.DetailViewModels;
 using System.Diagnostics;
 using System.Windows.Navigation;
 
 
 namespace Booklist.ViewModel
 {
+
     public class MainViewModel : ViewModelBase
     {
-
         public OverViewPage MainPage { get; set; } = new OverViewPage();
-        public DetailPage BookPage { get; set; } = new DetailPage();
+        public BookDetailPage BookPage { get; set; } = new BookDetailPage();
+        public ComicDetailPage ComicPage { get; set; } = new ComicDetailPage();
+        public MusicAlbumDetailPage AlbumPage { get; set; } = new MusicAlbumDetailPage();
         private Page _currentPage;
 
         public string CommandText
@@ -52,13 +55,37 @@ namespace Booklist.ViewModel
         {
             if (CurrentPage is OverViewPage)
             {
-                Book book = (MainPage.DataContext as OverViewVM).SelectedBook;
-                if (book == null)
+                BaseMedia media = (MainPage.DataContext as OverViewVM).SelectedBook;
+                if (media is Book)
                 {
-                    return;
+                    Book book = (MainPage.DataContext as OverViewVM).SelectedBook as Book;
+                    if (book == null)
+                    {
+                        return;
+                    }
+                    (BookPage.DataContext as BookDetailVM).CurrentBook = book;
+                    CurrentPage = BookPage;
                 }
-                (BookPage.DataContext as DetailVM).CurrentBook = book;
-                CurrentPage = BookPage;
+                else if (media is Comic)
+                {
+                    Comic comic = (MainPage.DataContext as OverViewVM).SelectedBook as Comic;
+                    if (comic == null)
+                    {
+                        return;
+                    }
+                    (ComicPage.DataContext as ComicDetailVM).CurrentComic = comic;
+                    CurrentPage = ComicPage;
+                }
+                else if (media is MusicAlbum)
+                {
+                    MusicAlbum musicAlbum = (MainPage.DataContext as OverViewVM).SelectedBook as MusicAlbum;
+                    if (musicAlbum == null)
+                    {
+                        return;
+                    }
+                    (AlbumPage.DataContext as MusicAlbumDetailVM).CurrentMusicAlbum = musicAlbum;
+                    CurrentPage = AlbumPage;
+                }
             }
             else
             {
@@ -79,28 +106,49 @@ namespace Booklist.ViewModel
         public MainViewModel()
         {
             CurrentPage = MainPage;
-            (BookPage.DataContext as DetailVM).DetailPage = BookPage;
             (BookPage.DataContext as DetailVM).MainVM = this;
+            (ComicPage.DataContext as DetailVM).MainVM = this;
+            (AlbumPage.DataContext as DetailVM).MainVM = this;
             //WebsiteScrapper.ScrapeWebsiteData("https://www.bol.com/nl/p/dark-journey/1001004001617987/?bltgh=p2ERiDb6PAwE1zVOSb9EBQ.2_9.10.ProductTitle");
         }
 
-        public void NextBook(Book book)
+        public void NextBook(BaseMedia book)
         {
             BaseMedia media = (MainPage.DataContext as OverViewVM).Next(book);
             if (media is Book)
             {
                 Book currentBook = media as Book;
-                (BookPage.DataContext as DetailVM).CurrentBook = currentBook;
+                (BookPage.DataContext as BookDetailVM).CurrentBook = currentBook;
+            }
+            else if (media is Comic)
+            {
+                Comic currentComic = media as Comic;
+                (ComicPage.DataContext as ComicDetailVM).CurrentComic = currentComic;
+            }
+            else if (media is MusicAlbum)
+            {
+                MusicAlbum musicAlbum = media as MusicAlbum;
+                (AlbumPage.DataContext as MusicAlbumDetailVM).CurrentMusicAlbum = musicAlbum;
             }
         }
 
-        public void PreviousBook(Book book)
+        public void PreviousBook(BaseMedia book)
         {
             BaseMedia media = (MainPage.DataContext as OverViewVM).Previous(book);
             if (media is Book)
             {
                 Book currentBook = media as Book;
-                (BookPage.DataContext as DetailVM).CurrentBook = currentBook;
+                (BookPage.DataContext as BookDetailVM).CurrentBook = currentBook;
+            }
+            else if (media is Comic)
+            {
+                Comic currentComic = media as Comic;
+                (ComicPage.DataContext as ComicDetailVM).CurrentComic = currentComic;
+            }
+            else if (media is MusicAlbum)
+            {
+                MusicAlbum musicAlbum = media as MusicAlbum;
+                (AlbumPage.DataContext as MusicAlbumDetailVM).CurrentMusicAlbum = musicAlbum;
             }
         }
         public void UpdateOverviewVM()

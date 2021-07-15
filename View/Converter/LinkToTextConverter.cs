@@ -21,7 +21,8 @@ namespace Booklist.View.Converter
             //}
 
             string path = value.ToString();
-            path = path.Replace("https://www.", "");
+            path = path.Replace("https://", "");
+            path = path.Replace("www.", "");
             string[] split = path.Split('/');
             //if (path.Contains("amazon"))
             //{

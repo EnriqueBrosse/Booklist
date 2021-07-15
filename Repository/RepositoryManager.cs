@@ -25,13 +25,15 @@ namespace Booklist.Repository
         public List<Repository> RepositoryList = new List<Repository>();
         public BookReposoitory BookReposoitory = new BookReposoitory();
         public ComicRepository ComicRepository = new ComicRepository();
+        public MusicRepository MusicRepository = new MusicRepository();
 
         public Repository CurrentRepository;
         public RepositoryManager()
         {
             RepositoryList.Add(BookReposoitory);
             RepositoryList.Add(ComicRepository);
-            CurrentRepository = RepositoryList[1];
+            RepositoryList.Add(MusicRepository);
+            CurrentRepository = RepositoryList[0];
         }
 
         public List<string> GetRepositoryNames()
@@ -61,6 +63,7 @@ namespace Booklist.Repository
             List<Task> parallelTasks = new List<Task>();
             parallelTasks.Add(BookReposoitory.GetMediaAsync());
             parallelTasks.Add(ComicRepository.GetMediaAsync());
+            parallelTasks.Add(MusicRepository.GetMediaAsync());
             await Task.WhenAll(parallelTasks);
         }
     }

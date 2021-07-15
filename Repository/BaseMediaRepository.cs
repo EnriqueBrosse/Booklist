@@ -228,13 +228,46 @@ namespace Booklist.Repository
         }
 
         protected string _outputFile = @"..\..\Resources\BaseMedia.json";
+
+        private void RemoveImages()
+        {
+            for (int i = 0; i < _baseMedia.Count; i++)
+            {
+                _baseMedia[i].Image = null;
+            }
+        }
+        private void addImages()
+        {
+            for (int i = 0; i < _baseMedia.Count; i++)
+            {
+                if (_baseMedia[i].ImageURL.Equals(""))
+                {
+                    _baseMedia[i].Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+                }
+                else
+                {
+                    try
+                    {
+                        _baseMedia[i].Image = new BitmapImage(new Uri(_baseMedia[i].ImageURL));
+                    }
+                    catch (Exception)
+                    {
+                        _baseMedia[i].Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+                    }
+                }
+            }
+        }
+
+
         public virtual void SaveMedia()
         {
+            RemoveImages();
             using (StreamWriter file = File.CreateText(_outputFile))
             {
                 JsonSerializer serializer = new JsonSerializer();
                 serializer.Serialize(file, _baseMedia);
             }
+            addImages();
         }
 
         public void AddMedia(T media)
@@ -253,6 +286,22 @@ namespace Booklist.Repository
             }
             _baseMedia.Add(media);
             SaveMedia();
+            if (media.ImageURL.Equals(""))
+            {
+                media.Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+            }
+            else
+            {
+                try
+                {
+                    media.Image = new BitmapImage(new Uri(media.ImageURL));
+                }
+                catch (Exception)
+                {
+                    media.Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+                }
+            }
+
         }
 
     }

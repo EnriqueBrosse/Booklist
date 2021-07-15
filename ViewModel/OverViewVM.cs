@@ -14,6 +14,7 @@ namespace Booklist.ViewModel
 {
     using View.AddMediaWindows;
     using View;
+    using ViewModel.AddMediaViewModels;
     public class OverViewVM : ViewModelBase
     {
         public List<BaseMedia> Books { get; set; }
@@ -57,13 +58,18 @@ namespace Booklist.ViewModel
                     ComicRepository tempRepository = repManager.CurrentRepository as ComicRepository;
                     Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
                 }
+                else if (repManager.CurrentRepository is MusicRepository)
+                {
+                    MusicRepository tempRepository = repManager.CurrentRepository as MusicRepository;
+                    Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
+                }
                 SelectedSeries = "All";
                 RaisePropertyChanged("Series");
                 RaisePropertyChanged("Books");
             }
         }
-        private Book _selectedBook; 
-        public Book SelectedBook
+        private BaseMedia _selectedBook; 
+        public BaseMedia SelectedBook
         { 
             get { return _selectedBook; }
             set
@@ -107,6 +113,20 @@ namespace Booklist.ViewModel
                     }
                     Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromSeries(_selectedSeries, _selectedEra, _ownedBool, _legendBool));
                 }
+                else if (repManager.CurrentRepository is MusicRepository)
+                {
+                    MusicRepository tempRepository = repManager.CurrentRepository as MusicRepository;
+                    if (value == null)
+                    {
+                        Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromEra(_selectedEra, "All", "All"));
+                        RaisePropertyChanged("Books");
+                        _selectedSeries = "None";
+                        return;
+                    }
+                    Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromSeries(_selectedSeries, _selectedEra, _ownedBool, _legendBool));
+                }
+
+
                 RaisePropertyChanged("Books");
                 RaisePropertyChanged("SelectedSeries");
             }
@@ -228,6 +248,15 @@ namespace Booklist.ViewModel
                 
                 (comicWindow.DataContext as AddComicVM).NewComic = newComic;
                 comicWindow.ShowDialog();
+            }
+            else if (repositoryManager.CurrentRepository == repositoryManager.MusicRepository)
+            {
+                AddMusicAlbumWindow albumWindow = new AddMusicAlbumWindow();
+                (albumWindow.DataContext as AddMusicAlbumVM).OverViewViewModel = this;
+                (albumWindow.DataContext as AddMusicAlbumVM).AlbumWindow = albumWindow;
+                MusicAlbum album = new MusicAlbum();
+                (albumWindow.DataContext as AddMusicAlbumVM).NewAlbum = album;
+                albumWindow.ShowDialog();
             }
         }
 

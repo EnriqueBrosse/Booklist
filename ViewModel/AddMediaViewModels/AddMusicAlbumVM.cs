@@ -6,23 +6,27 @@ using System.Threading.Tasks;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
-
-namespace Booklist.ViewModel
+namespace Booklist.ViewModel.AddMediaViewModels
 {
     using Model;
     using Repository;
-    using View;
-    public class AddBookVM : ViewModelBase
+    using View.AddMediaWindows;
+
+    public class AddMusicAlbumVM : ViewModelBase
     {
-        private Book _newBook;
-        public Book NewBook { get { return _newBook; }
-            set { _newBook = value; RaisePropertyChanged("NewBook"); } }
-        public AddBookWindow BookWindow { get; set; }
+        private MusicAlbum _newAlbum;
+        public MusicAlbum NewAlbum
+        {
+            get { return _newAlbum; }
+            set { _newAlbum = value; RaisePropertyChanged("NewAlbum"); }
+        }
+        public AddMusicAlbumWindow AlbumWindow { get; set; }
         public OverViewVM OverViewViewModel { get; set; }
         private RelayCommand _saveBookCommand;
+
         public RelayCommand SaveBookCommand
         {
-            get 
+            get
             {
                 if (_saveBookCommand == null)
                 {
@@ -33,7 +37,7 @@ namespace Booklist.ViewModel
         }
         private void SaveBook()
         {
-            RepositoryManager.GetInstance().BookReposoitory.AddMedia(_newBook);
+            RepositoryManager.GetInstance().MusicRepository.AddMedia(_newAlbum);
             OverViewViewModel.SelectedSeries = OverViewViewModel.SelectedSeries; //this will update the list
         }
 
@@ -51,21 +55,21 @@ namespace Booklist.ViewModel
         }
         void AddLink()
         {
-            if (BookWindow == null)
+            if (AlbumWindow == null)
             {
                 return;
             }
-            string data = BookWindow.LinkAddTextBox.Text;
-            BookWindow.LinkAddTextBox.Text = "";
+            string data = AlbumWindow.LinkAddTextBox.Text;
+            AlbumWindow.LinkAddTextBox.Text = "";
             if (!IsValidLink(data))
             {
                 return;
             }
-            List<string> links = _newBook.Links.ToList<string>();
+            List<string> links = _newAlbum.Links.ToList<string>();
             links.Add(data);
-            NewBook.Links = links.ToArray();
-            BookWindow.LinkAddTextBox.Text = "";
-            RaisePropertyChanged("NewBook");
+            NewAlbum.Links = links.ToArray();
+            AlbumWindow.LinkAddTextBox.Text = "";
+            RaisePropertyChanged("NewAlbum");
         }
         private RelayCommand _removeLinkCommand;
         public RelayCommand RemoveLinkCommand
@@ -81,21 +85,21 @@ namespace Booklist.ViewModel
         }
         void RemoveLink()
         {
-            if (BookWindow == null)
+            if (AlbumWindow == null)
             {
                 return;
             }
-            object data = BookWindow.LinkListBox.SelectedItem;
+            object data = AlbumWindow.LinkListBox.SelectedItem;
             if (data == null)
             {
                 return;
             }
             // know it's a string 
             string link = data.ToString();
-            List<string> list = _newBook.Links.ToList<string>();
+            List<string> list = _newAlbum.Links.ToList<string>();
             list.Remove(link);
-            NewBook.Links = list.ToArray();
-            RaisePropertyChanged("NewBook");
+            NewAlbum.Links = list.ToArray();
+            RaisePropertyChanged("NewAlbum");
         }
         private bool IsValidLink(string url)
         {

@@ -79,16 +79,25 @@
     <Compile Include="Model\BaseMedia.cs" />
     <Compile Include="Model\Books2.cs" />
     <Compile Include="Model\Comic.cs" />
+    <Compile Include="Model\MusicAlbum.cs" />
     <Compile Include="Model\WebScrapeJsonData.cs" />
     <Compile Include="Model\WebsiteScrapper.cs" />
     <Compile Include="Repository\BaseMediaRepository.cs" />
     <Compile Include="Repository\BookReposoitory.cs" />
     <Compile Include="Repository\ComicRepository.cs" />
+    <Compile Include="Repository\MusicRepository.cs" />
     <Compile Include="Repository\RepositoryManager.cs" />
     <Compile Include="ViewModel\AddMediaViewModels\AddComicVM.cs" />
     <Compile Include="ViewModel\AddMediaViewModels\AddBookVM.cs" />
+    <Compile Include="ViewModel\AddMediaViewModels\AddMusicAlbumVM.cs" />
+    <Compile Include="ViewModel\DetailViewModels\BookDetailVM.cs" />
+    <Compile Include="ViewModel\DetailViewModels\ComicDetailVM.cs" />
     <Compile Include="ViewModel\DetailViewModels\DetailVM.cs" />
+    <Compile Include="ViewModel\DetailViewModels\MusicAlbumDetailVM.cs" />
     <Compile Include="ViewModel\EditMediaViewModels\EditBookVM.cs" />
+    <Compile Include="ViewModel\EditMediaViewModels\EditComicVM.cs" />
+    <Compile Include="ViewModel\EditMediaViewModels\EditMediaVM.cs" />
+    <Compile Include="ViewModel\EditMediaViewModels\EditMusicAlbumVM.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\OverViewVM.cs" />
     <Compile Include="View\AddMediaWindows\AddBookWindow.xaml.cs">
@@ -97,13 +106,28 @@
     <Compile Include="View\AddMediaWindows\AddComicWindow.xaml.cs">
       <DependentUpon>AddComicWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\AddMediaWindows\AddMusicAlbumWindow.xaml.cs">
+      <DependentUpon>AddMusicAlbumWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Converter\LinkToImageConverter.cs" />
     <Compile Include="View\Converter\LinkToTextConverter.cs" />
-    <Compile Include="View\DetailPages\DetailPage.xaml.cs">
-      <DependentUpon>DetailPage.xaml</DependentUpon>
+    <Compile Include="View\DetailPages\ComicDetailPage.xaml.cs">
+      <DependentUpon>ComicDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\EditBook.xaml.cs">
+    <Compile Include="View\DetailPages\BookDetailPage.xaml.cs">
+      <DependentUpon>BookDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DetailPages\MusicAlbumDetailPage.xaml.cs">
+      <DependentUpon>MusicAlbumDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditMediaPages\EditBook.xaml.cs">
       <DependentUpon>EditBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditMediaPages\EditComic.xaml.cs">
+      <DependentUpon>EditComic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditMediaPages\EditMusicAlbum.xaml.cs">
+      <DependentUpon>EditMusicAlbum.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\OverViewPage.xaml.cs">
       <DependentUpon>OverViewPage.xaml</DependentUpon>
@@ -128,11 +152,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\DetailPages\DetailPage.xaml">
+    <Page Include="View\AddMediaWindows\AddMusicAlbumWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\EditBook.xaml">
+    <Page Include="View\DetailPages\ComicDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DetailPages\BookDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DetailPages\MusicAlbumDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EditMediaPages\EditBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EditMediaPages\EditComic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EditMediaPages\EditMusicAlbum.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -168,6 +212,7 @@
     <EmbeddedResource Include="Resources\Book.json" />
     <EmbeddedResource Include="Resources\Books.json" />
     <EmbeddedResource Include="Resources\Comics.json" />
+    <EmbeddedResource Include="Resources\MusicAlbums.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -177,6 +222,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\WebScrapData\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Local Pictures\communityIcon_scbw0f60iix61.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

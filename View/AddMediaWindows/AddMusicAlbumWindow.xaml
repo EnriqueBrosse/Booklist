@@ -1,0 +1,99 @@
+﻿<Window x:Class="Booklist.View.AddMediaWindows.AddMusicAlbumWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Booklist.View.AddMediaWindows"
+      xmlns:ViewModel="clr-namespace:Booklist.ViewModel.AddMediaViewModels"
+      xmlns:Convert="clr-namespace:Booklist.View.Converter"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddMusicAlbumWindow">
+    
+    <Window.DataContext>
+        <ViewModel:AddMusicAlbumVM></ViewModel:AddMusicAlbumVM>
+    </Window.DataContext>
+    <Window.Resources>
+        <Convert:LinkToTextConverter x:Key="LinkToTextConverter"></Convert:LinkToTextConverter>
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Button Grid.ColumnSpan="2" Command="{Binding SaveBookCommand}">
+                <TextBlock Text="Save"></TextBlock>
+            </Button>
+
+            <TextBlock Grid.Row="1" Text="Name"></TextBlock>
+            <TextBlock Grid.Row="2" Text="Release Year"></TextBlock>
+            <TextBlock Grid.Row="3" Text="Artist"></TextBlock>
+            <TextBlock Grid.Row="4" Text="ImageURL"></TextBlock>
+            <TextBlock Grid.Row="5" Text="Era"></TextBlock>
+            <TextBlock Grid.Row="6" Text="Owned"></TextBlock>
+            <TextBlock Grid.Row="7" Text="Legends"></TextBlock>
+            <TextBlock Grid.Row="8" Text="Time"></TextBlock>
+            <TextBlock Grid.Row="9" Text="Links"></TextBlock>
+
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding NewAlbum.Name}"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding NewAlbum.ReleaseYear}"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding NewAlbum.Artist}"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding NewAlbum.ImageURL}"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding NewAlbum.Era}"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding NewAlbum.Owned}"></TextBox>
+            <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding NewAlbum.Legends}"></TextBox>
+            <TextBox Grid.Row="8" Grid.Column="1" Text="{Binding NewAlbum.Time}"></TextBox>
+
+            <Grid Grid.Row="10" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Vertical">
+                    <TabPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBox Name="LinkAddTextBox" Width="125" ></TextBox>
+                        <Button Command="{Binding AddLinkCommand}" Content="Add" Width="50"></Button>
+                        <Button Command="{Binding RemoveLinkCommand}" Content="Remove" Width="50"></Button>
+                    </TabPanel>
+                </StackPanel>
+
+                <ListBox Name="LinkListBox" Grid.Row="1" Grid.Column="0" ItemsSource="{Binding NewAlbum.Links}" 
+                     HorizontalContentAlignment="Stretch" Margin="0,0,0,-57">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="">           
+                    <Hyperlink  NavigateUri="{Binding }" RequestNavigate="Hyperlink_RequestNavigate" >
+                        <Hyperlink.Inlines>
+                            <Run Text="{Binding Path=.,Converter={StaticResource LinkToTextConverter}}"/>
+                        </Hyperlink.Inlines>
+                    </Hyperlink>
+                            </TextBlock>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

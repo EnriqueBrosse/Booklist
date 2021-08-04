@@ -15,12 +15,12 @@ namespace Booklist.ViewModel.EditMediaViewModels
         public Book CopiedBook
         {
             get { return _copiedBook; }
-            set { _copiedBook = value; RaisePropertyChanged("CopiedMusicAlbum"); }
+            set { _copiedBook = value; RaisePropertyChanged("CopiedBook"); }
         }
         protected override void Save()
         {
             DetailViewModel.Save(CopiedBook);
-            RaisePropertyChanged("CopiedMusicAlbum");
+            RaisePropertyChanged("CopiedBook");
         }
     }
 }

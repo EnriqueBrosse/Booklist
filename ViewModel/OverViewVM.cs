@@ -63,6 +63,16 @@ namespace Booklist.ViewModel
                     MusicRepository tempRepository = repManager.CurrentRepository as MusicRepository;
                     Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
                 }
+                else if (repManager.CurrentRepository is FilmMediaRepository)
+                {
+                    FilmMediaRepository tempRepository = repManager.CurrentRepository as FilmMediaRepository;
+                    Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
+                }
+                else if (repManager.CurrentRepository is GamesRepository)
+                {
+                    GamesRepository tempRepository = repManager.CurrentRepository as GamesRepository;
+                    Series = tempRepository.GetSeriesFromEra(_selectedEra, _ownedBool, _legendBool);
+                }
                 SelectedSeries = "All";
                 RaisePropertyChanged("Series");
                 RaisePropertyChanged("Books");
@@ -125,8 +135,30 @@ namespace Booklist.ViewModel
                     }
                     Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromSeries(_selectedSeries, _selectedEra, _ownedBool, _legendBool));
                 }
-
-
+                else if (repManager.CurrentRepository is FilmMediaRepository)
+                {
+                    FilmMediaRepository tempRepository = repManager.CurrentRepository as FilmMediaRepository;
+                    if (value == null)
+                    {
+                        Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromEra(_selectedEra, "All", "All"));
+                        RaisePropertyChanged("Books");
+                        _selectedSeries = "None";
+                        return;
+                    }
+                    Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromSeries(_selectedSeries, _selectedEra, _ownedBool, _legendBool));
+                }
+                else if (repManager.CurrentRepository is GamesRepository)
+                {
+                    GamesRepository tempRepository = repManager.CurrentRepository as GamesRepository;
+                    if (value == null)
+                    {
+                        Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromEra(_selectedEra, "All", "All"));
+                        RaisePropertyChanged("Books");
+                        _selectedSeries = "None";
+                        return;
+                    }
+                    Books = tempRepository.ConvertToBase(tempRepository.GetMediaFromSeries(_selectedSeries, _selectedEra, _ownedBool, _legendBool));
+                }
                 RaisePropertyChanged("Books");
                 RaisePropertyChanged("SelectedSeries");
             }

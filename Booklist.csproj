@@ -79,16 +79,21 @@
     <Compile Include="Model\BaseMedia.cs" />
     <Compile Include="Model\Books2.cs" />
     <Compile Include="Model\Comic.cs" />
+    <Compile Include="Model\FilmMedia.cs" />
+    <Compile Include="Model\Game.cs" />
     <Compile Include="Model\MusicAlbum.cs" />
     <Compile Include="Model\WebScrapeJsonData.cs" />
     <Compile Include="Model\WebsiteScrapper.cs" />
     <Compile Include="Repository\BaseMediaRepository.cs" />
     <Compile Include="Repository\BookReposoitory.cs" />
     <Compile Include="Repository\ComicRepository.cs" />
+    <Compile Include="Repository\FilmMediaRepository.cs" />
+    <Compile Include="Repository\GamesRepository.cs" />
     <Compile Include="Repository\MusicRepository.cs" />
     <Compile Include="Repository\RepositoryManager.cs" />
     <Compile Include="ViewModel\AddMediaViewModels\AddComicVM.cs" />
     <Compile Include="ViewModel\AddMediaViewModels\AddBookVM.cs" />
+    <Compile Include="ViewModel\AddMediaViewModels\AddFilmMediaVM.cs" />
     <Compile Include="ViewModel\AddMediaViewModels\AddMusicAlbumVM.cs" />
     <Compile Include="ViewModel\DetailViewModels\BookDetailVM.cs" />
     <Compile Include="ViewModel\DetailViewModels\ComicDetailVM.cs" />
@@ -213,6 +218,8 @@
     <EmbeddedResource Include="Resources\Books.json" />
     <EmbeddedResource Include="Resources\Comics.json" />
     <EmbeddedResource Include="Resources\MusicAlbums.json" />
+    <EmbeddedResource Include="Resources\FilmMedia.json" />
+    <EmbeddedResource Include="Resources\Games.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

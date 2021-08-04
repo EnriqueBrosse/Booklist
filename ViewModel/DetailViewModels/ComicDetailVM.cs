@@ -41,7 +41,7 @@ namespace Booklist.ViewModel.DetailViewModels
             links.Add(LinkToAdd);
             _currentComic.Links = links.ToArray();
             LinkToAdd = "";
-            RaisePropertyChanged("CurrentBook");
+            RaisePropertyChanged("CurrentComic");
             RaisePropertyChanged("LinkToAdd");
         }
 
@@ -55,7 +55,7 @@ namespace Booklist.ViewModel.DetailViewModels
             List<string> list = _currentComic.Links.ToList<string>();
             list.Remove(CurrentLink);
             _currentComic.Links = list.ToArray();
-            RaisePropertyChanged("CurrentBook");
+            RaisePropertyChanged("CurrentComic");
         }
 
         protected override void OpenScreen()

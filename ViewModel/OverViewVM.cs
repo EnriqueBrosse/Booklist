@@ -45,7 +45,6 @@ namespace Booklist.ViewModel
             {
                 _selectedEra = value;
                 RepositoryManager repManager = RepositoryManager.GetInstance();
-
                 // not the ideal way but it's either doing it here or doing it in the base class
                 // and it's a lot of repeated code but it's either here a mass class or in the base class
                 if (repManager.CurrentRepository is BookReposoitory)
@@ -163,6 +162,7 @@ namespace Booklist.ViewModel
                 RaisePropertyChanged("SelectedSeries");
             }
         }
+
         private string _ownedBool;
         public string OwnedBool
         {
@@ -185,7 +185,6 @@ namespace Booklist.ViewModel
         }
 
         private RelayCommand _addBookCommand;
-
         public RelayCommand AddBookCommand
         {
             get 
@@ -295,7 +294,6 @@ namespace Booklist.ViewModel
         public OverViewVM()
         {
             RepositoryManager.GetInstance().LoadRepositories();
-
             OwnedList = new List<string> { "True", "False", "All" };
             LegendsList = new List<string> { "True", "False", "All" };
             _ownedBool = "All";
@@ -306,9 +304,6 @@ namespace Booklist.ViewModel
             Repositories = RepositoryManager.GetInstance().GetRepositoryNames();
             CurrentRepository = Repositories[1];
             RaisePropertyChanged("Repositories");
-
-
-            //BookReposoitory.ScrapData();
         }
 
         public BaseMedia Next(BaseMedia book)

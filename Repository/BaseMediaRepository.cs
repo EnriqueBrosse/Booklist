@@ -14,7 +14,6 @@ namespace Booklist.Repository
 {
     public class Repository 
     { 
-        
     }
 
     public class BaseMediaRepository<T> : Repository where T : BaseMedia 
@@ -34,8 +33,19 @@ namespace Booklist.Repository
                     _baseMedia = JsonConvert.DeserializeObject<List<T>>(json);
                 }
             }
+            int thingsIHave = 0;
+            int thingsIdontHave = 0;
             for (int i = 0; i < _baseMedia.Count; i++)
             {
+                if (_baseMedia[i].Owned)
+                {
+                    thingsIHave++;
+                }
+                else
+                {
+                    thingsIdontHave++;
+                }
+
                 if (_baseMedia[i].ImageURL.Equals(""))
                 {
                     _baseMedia[i].Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
@@ -52,6 +62,8 @@ namespace Booklist.Repository
                     }
                 }
             }
+            Console.WriteLine(_baseMedia[0].ToString() + " amount i have " + thingsIHave);
+            Console.WriteLine(_baseMedia[0].ToString() + " amount i dont have " + thingsIdontHave);
         }
 
         public List<BaseMedia>ConvertToBase(List<T> derivedList)
@@ -257,7 +269,6 @@ namespace Booklist.Repository
                 }
             }
         }
-
 
         public virtual void SaveMedia()
         {

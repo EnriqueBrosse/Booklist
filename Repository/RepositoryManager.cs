@@ -61,7 +61,16 @@ namespace Booklist.Repository
             }
         }
 
-        public async void LoadRepositories()
+        public void LoadRepositories()
+        {
+            BookReposoitory.GetMedia();
+            ComicRepository.GetMedia();
+            MusicRepository.GetMedia();
+            GamesRepository.GetMedia();
+            FilmMediaRepository.GetMedia();
+        }
+
+        public async void LoadRepositoriesAsync()
         {
             List<Task> parallelTasks = new List<Task>();
             parallelTasks.Add(BookReposoitory.GetMediaAsync());

@@ -47,6 +47,8 @@ namespace Booklist.ViewModel
                 RepositoryManager repManager = RepositoryManager.GetInstance();
                 // not the ideal way but it's either doing it here or doing it in the base class
                 // and it's a lot of repeated code but it's either here a mass class or in the base class
+                BaseMediaRepository<BaseMedia> repository = repManager.CurrentRepository as BaseMediaRepository<BaseMedia>;
+
                 if (repManager.CurrentRepository is BookReposoitory)
                 {
                     BookReposoitory tempRepository = repManager.CurrentRepository as BookReposoitory;
@@ -293,7 +295,8 @@ namespace Booklist.ViewModel
 
         public OverViewVM()
         {
-            RepositoryManager.GetInstance().LoadRepositories();
+            RepositoryManager.GetInstance().LoadRepositoriesAsync();
+            //RepositoryManager.GetInstance().LoadRepositories();
             OwnedList = new List<string> { "True", "False", "All" };
             LegendsList = new List<string> { "True", "False", "All" };
             _ownedBool = "All";

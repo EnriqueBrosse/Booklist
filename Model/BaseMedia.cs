@@ -37,6 +37,7 @@ namespace Booklist.Model
         public string Era { get; set; }
         [JsonProperty(PropertyName = "links")]
         public string[] Links { get; set; }
+        [JsonIgnore]
         private BitmapImage _image;
         [JsonIgnore]
         public BitmapImage Image

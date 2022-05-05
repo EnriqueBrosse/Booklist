@@ -22,7 +22,37 @@ namespace Booklist.Repository
         {
         }
 
-        public async Task LoadTemplatedValue()
+        private void LoadTemplatedValue()
+        {
+            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            using (Stream stream = assembly.GetManifestResourceStream(_filePath))
+            {
+                using (var reader = new StreamReader(stream))
+                {
+                    string json = reader.ReadToEnd();
+                    _baseMedia = JsonConvert.DeserializeObject<List<T>>(json);
+                }
+            }
+            int thingsIHave = 0;
+            int thingsIdontHave = 0;
+            string executableLocation = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            for (int i = 0; i < _baseMedia.Count; i++)
+            {
+                if (_baseMedia[i].Owned)
+                {
+                    thingsIHave++;
+                }
+                else
+                {
+                    thingsIdontHave++;
+                }
+                GetImage(_baseMedia[i], executableLocation);
+            }
+            Console.WriteLine(_baseMedia[0].ToString() + " amount i have " + thingsIHave);
+            Console.WriteLine(_baseMedia[0].ToString() + " amount i dont have " + thingsIdontHave);
+        }
+
+        public async Task LoadTemplatedValueAsinc()
         {
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
             using (Stream stream = assembly.GetManifestResourceStream(_filePath))
@@ -35,6 +65,7 @@ namespace Booklist.Repository
             }
             int thingsIHave = 0;
             int thingsIdontHave = 0;
+            string executableLocation = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
             for (int i = 0; i < _baseMedia.Count; i++)
             {
                 if (_baseMedia[i].Owned)
@@ -45,22 +76,7 @@ namespace Booklist.Repository
                 {
                     thingsIdontHave++;
                 }
-
-                if (_baseMedia[i].ImageURL.Equals(""))
-                {
-                    _baseMedia[i].Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
-                }
-                else
-                {
-                    try
-                    {
-                        _baseMedia[i].Image = new BitmapImage(new Uri(_baseMedia[i].ImageURL));
-                    }
-                    catch (Exception)
-                    {
-                        _baseMedia[i].Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
-                    }
-                }
+                GetImage(_baseMedia[i], executableLocation);
             }
             Console.WriteLine(_baseMedia[0].ToString() + " amount i have " + thingsIHave);
             Console.WriteLine(_baseMedia[0].ToString() + " amount i dont have " + thingsIdontHave);
@@ -80,13 +96,24 @@ namespace Booklist.Repository
 
         protected List<T> _baseMedia;
         protected string _filePath = "Booklist.Resources.BaseMedia.json";
+
+        public List<T> GetMedia()
+        {
+            if (_baseMedia != null)
+            {
+                return _baseMedia;
+            }
+            LoadTemplatedValue();
+            return _baseMedia;
+
+        }
         public async Task<List<T>> GetMediaAsync() 
         {
             if (_baseMedia != null)
             {
                 return _baseMedia;
             }
-            await LoadTemplatedValue();
+            await LoadTemplatedValueAsinc();
             return _baseMedia;
         }
         public List<T> GetMedia(string owned, string legends)
@@ -311,6 +338,59 @@ namespace Booklist.Repository
                 {
                     media.Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
                 }
+            }
+
+        }
+
+        private void GetImage(T media, string executableLocation)
+        {
+            string name = media.Name.Replace(" ", "").Replace(":", "").Replace("�","");
+            string location = executableLocation + "\\" + media.GetType().Name + "\\" + name + ".png";
+            string directory = Path.GetDirectoryName(location);
+            if (File.Exists(location))
+            {
+                media.Image = new BitmapImage(new Uri(location, UriKind.RelativeOrAbsolute));
+            }
+            else
+            {
+                if (!System.IO.Directory.Exists(directory))
+                {
+                    System.IO.Directory.CreateDirectory(directory);
+                }
+                if (media.Name == "")
+                {
+                    return;
+                }
+                try
+                {
+                    media.Image = new BitmapImage(new Uri(media.ImageURL));
+                }
+                catch (Exception)
+                {
+                    media.Image = new BitmapImage(new Uri("https://cdn.vox-cdn.com/thumbor/5VQLfvl2smTJ1uxXH2JyDj9U0sI=/0x0:2040x1360/920x613/filters:focal(868x1009:1194x1335):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54627067/rwarren_170504_1668_0001.0.jpg"));
+                }
+                if (media.Image.IsDownloading)
+                {
+                    media.Image.DownloadCompleted += SaveImage;
+                }
+                else
+                {
+                    SaveImage(media, new EventArgs());
+                }
+            }
+        }
+        private void SaveImage(object sender, EventArgs e)
+        {
+            BitmapImage image = (BitmapImage)sender;
+            BaseMedia media = _baseMedia.Find(x => x.Image == image);
+
+            string name = media.Name.Replace(" ", "").Replace(":", "").Replace("�", "");
+            string location = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + "\\" + media.GetType().Name + "\\" + name + ".png";
+            using (var fileStream = new System.IO.FileStream(location, System.IO.FileMode.Create))
+            {
+                BitmapEncoder encoder = new PngBitmapEncoder();
+                encoder.Frames.Add(BitmapFrame.Create(media.Image));
+                encoder.Save(fileStream);
             }
 
         }

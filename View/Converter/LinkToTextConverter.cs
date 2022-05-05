@@ -15,11 +15,6 @@ namespace Booklist.View.Converter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            //if (DesignerProperties.GetIsInDesignMode(new DependencyObject()))
-            //{
-            //    return new BitmapImage(new Uri("https://img.pngio.com/pokeball-clipart-logo-pokemon-pokemon-ball-logo-png-pokeball-icon-png-920_963.png"));
-            //}
-
             string path = value.ToString();
             path = path.Replace("https://", "");
             path = path.Replace("www.", "");

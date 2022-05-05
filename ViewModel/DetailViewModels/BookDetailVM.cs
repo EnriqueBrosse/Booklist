@@ -36,8 +36,11 @@ namespace Booklist.ViewModel.DetailViewModels
                 return;
             }
             List<string> links = _currentBook.Links.ToList<string>();
-            links.Add(LinkToAdd);
-            _currentBook.Links = links.ToArray();
+            if (!links.Contains(LinkToAdd))
+            {
+                links.Add(LinkToAdd);
+                _currentBook.Links = links.ToArray();
+            }
             LinkToAdd = "";
             RaisePropertyChanged("CurrentBook");
             RaisePropertyChanged("LinkToAdd");
